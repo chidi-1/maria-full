@@ -1,0 +1,389 @@
+.catalog
+  z-index 5
+  position relative
+
+  .filter-form-bg
+    display block
+    position relative
+    padding-bottom 80px
+    margin-bottom 80px
+
+    &:before
+      position absolute
+      content ""
+      width 1449px
+      height 1000px
+      bottom 0
+      left 50%
+      margin-left -725px
+      background url("../img/bg--header-l.png") no-repeat 0 0
+
+
+    .filter-form
+      position relative
+      z-index 10
+      margin 0 30px
+
+      h2
+        text-align left
+        margin-bottom 20px
+
+      .jq-selectbox__select
+        box-shadow none !important
+        background $cWhite !important
+        border 1px solid $cWhite !important
+        border-radius 30px
+        width 200px
+        height 38px
+        padding 0 35px 0 17px
+        position relative
+        margin-bottom 31px
+
+        .jq-selectbox__select-text
+          color $cBlue_d
+          font-family $fUbuntu_m
+          position relative
+          z-index 10
+          padding-top 2px
+
+        .jq-selectbox__trigger
+          border none
+          z-index 10
+
+          .jq-selectbox__trigger-arrow
+            border none
+            width 19px
+            height 19px
+            background url("../img/spritesheet.png") no-repeat -21px -21px
+            top 50%
+            margin-top -9px
+            right 10px
+            transition all 0.2s ease-in-out
+            filter grayscale(100%)
+
+            &:hover
+              filter grayscale(0)
+
+      .jq-selectbox__dropdown
+        padding-top 10px
+        border 1px solid $cWhite
+        border-top none
+        border-radius 0 0 10px 10px
+        box-shadow none
+        background $cWhite
+        top 27px !important
+        z-index 11
+        padding-bottom 10px
+        bottom auto !important
+
+        &:before,
+        &:after
+          position absolute
+          content ""
+          width 5px
+          height 10px
+          background $cWhite
+          top -10px
+
+        &:before
+          left -1px
+          border-left 1px solid $cWhite
+        &:after
+          right -1px
+          border-right 1px solid $cWhite
+
+        ul
+          display block
+
+          li
+            display block
+            background transparent !important
+            color $cBrown !important
+            padding-left 17px
+
+            &:hover
+              text-decoration underline
+
+            &.disabled
+              display none
+
+      .slider-wrap
+        display inline-block
+        vertical-align top
+        position relative
+        margin-right 50px
+        padding-top 12px
+
+        &:nth-child(2)
+          margin-right 0
+
+        span
+          display inline-block
+          vertical-align top
+          font-size 13px
+
+          &.value
+            position absolute
+            font-size 24px
+            top -16px
+            font-weight bold
+            left 70px
+            right 0
+            text-align center
+
+        .ui-slider-horizontal
+          display inline-block
+          vertical-align top
+          width 165px
+          height 5px
+          border-radius 5px
+          background #a8b6c6
+          margin-left 17px
+          margin-top 10px
+
+          &:before,
+          &:after
+            position absolute
+
+          .ui-slider-handle
+            width 19px
+            height 19px
+            background url("../img/spritesheet.png") no-repeat -263px -319px
+            cursor pointer
+            outline none
+            top 4px
+
+            &:hover
+              background url("../img/spritesheet.png") no-repeat -323px -319px
+
+
+      .filter-color
+        display inline-block
+        vertical-align top
+        width 230px
+        margin-right 80px
+        margin-bottom 35px
+        white-space nowrap
+        margin-top -17px
+
+        span,
+        .grid
+          display inline-block
+          vertical-align top
+          white-space normal
+
+        span
+          margin-right 30px
+
+        label
+          display inline-block
+          vertical-align top
+          width 62px
+          height 62px
+          position relative
+          cursor pointer
+
+          input
+            display none
+
+          div
+            display block
+            width 62px
+            height 62px
+            position relative
+
+            &:before
+              position absolute
+              content ""
+              left 0
+              top 0
+              right 0
+              bottom 0
+              background-size 100% 100% !important
+
+          &:nth-child(3n + 1)
+            div:before
+              background url("../img/decor--color-left-s-blue.png")
+          &:nth-child(3n + 1)
+            input:checked + div:before
+              background url("../img/decor--color-left-l-blue.png")
+
+          &:nth-child(3n + 2)
+            div:before
+              background url("../img/decor--color-center-s-blue.png")
+          &:nth-child(3n + 2)
+            input:checked + div:before
+              background url("../img/decor--color-center-l-blue.png")
+
+          &:nth-child(3n + 3)
+            div:before
+              background url("../img/decor--color-right-s-blue.png")
+          &:nth-child(3n + 3)
+            input:checked + div:before
+              background url("../img/decor--color-right-l-blue.png")
+
+      .filter-top--center--checkbox
+        display block
+        padding-top 51px
+        width 530px
+
+        label
+          display inline-block
+          vertical-align top
+          margin-right 20px
+          min-width 25%
+          cursor pointer
+          margin-bottom 16px
+
+          input
+            display none
+
+          .psevdocheckbox
+            display inline-block
+            vertical-align top
+            width 15px
+            height 15px
+            border-radius 15px
+            background #ffffff
+            margin-right 15px
+            box-sizing border-box
+            border 4px solid $cWhite
+
+          input:checked + .psevdocheckbox
+            background $cBlue_d
+
+
+          span
+            display inline-block
+            vertical-align top
+            font-size 13px
+            line-height 15px
+
+    .filter-top
+      padding-bottom 26px
+
+    .filter-bottom
+      display block
+      margin-left 150px
+
+    .filter-brends
+      display inline-block
+      vertical-align top
+      width 720px
+
+      label
+        display inline-block
+        vertical-align top
+        width 19.5%
+        cursor pointer
+        margin-bottom 15px
+
+        input
+          display none
+
+        span
+          display inline-block
+          vertical-align top
+          position relative
+          font-size 13px
+
+        input:checked + span
+          color $cBlue_d
+
+          &:after
+            position absolute
+            content ""
+            height 6px
+            background url(../img/decor--pagination.png) no-repeat 0 0
+            background-size 100% 100%
+            bottom -5px
+            left 0
+            right 0
+
+    .decor-left-remove
+      display inline-block
+      vertical-align top
+      margin-left 30px
+
+      span
+        display inline-block
+        vertical-align top
+
+  aside
+    display inline-block
+    vertical-align top
+    width 250px
+    margin-left 30px
+    position relative
+    margin-bottom 278px
+
+    &:before
+      left -77px
+      right -57px
+      top -69px
+      bottom -50px
+      position absolute
+      content ""
+      background url("../img/bg--aside.png") no-repeat 0 0
+      background-size 100% 100%
+
+    &:after
+      position absolute
+      content ""
+      width 176px
+      height 187px
+      background url("../img/img--catalog.png") no-repeat 0 0
+      left 10px
+      bottom -278px
+      
+    .aside-nav
+      position relative
+      padding-top 9px
+
+      li
+        display block
+        margin-bottom 15px
+
+        a,
+        span
+          display block
+          padding 9px 15px
+          font-size 13px
+          border-radius 20px
+
+
+        span,
+        a:hover
+          background $cWhite
+          color $cBlue_d
+
+  .catalog--container
+    display inline-block
+    vertical-align top
+    width 900px
+    position relative
+    z-index 15
+
+    p.notification
+      text-align center
+      font-weight bold
+      font-size 16px
+
+    h2
+      margin-bottom 30px
+
+    .catalog-item
+      margin-left -15px
+
+    .slider-item__el
+      display inline-block
+      vertical-align top
+      margin-left 13px
+      height 455px
+      margin-bottom 15px
+
+
+
+
+
+

@@ -1,0 +1,211 @@
+block vars
+
+header.header
+    .width-wrap
+        .header--top
+            .flex-between
+                nav.header--nav
+                    ul
+                        li
+                            a(href="") Главная
+                        li
+                            a(href="") Каталог товаров
+                        li
+                            a(href="") Бренды
+                        li
+                            a(href="") Доставка и оплата
+                        li
+                            a(href="") FAQ
+                        li
+                            a(href="") Партнерам
+                        li
+                            a(href="") Блог компании
+                        li
+                            a(href="") О компании
+
+                a(href="").header--lk Вход в личный кабинет
+
+                a(href="").header--mobile-menu.js--mobile-menu
+
+        .header--top-mobile
+            .flex-between
+                .header--logo
+                    img(src="../../../img/logo--header.jpg" alt /)
+
+                a(href="tel:84991319392").header--phone 8 (499) 131-93-92
+
+                a(href="").header--mobile-menu.js--mobile-menu
+
+        .header--middle
+            .flex-between
+                a(href="").header--lk
+
+                .header--logo
+                    img(src="../../../img/logo--header.jpg" alt /)
+
+                a(href="tel:84991319392").header--phone 8 (499) 131-93-92
+
+                form(method="post" action="").header--searh.main-form.dropdown-wrap
+                    label.change-category.js--open-dropdown
+                        input(type="text" name="category" value="Выберите...").inp
+
+                    .dropdown
+                        ul
+                            li
+                                a(href="").js--change-category Опция 1
+                            li
+                                a(href="").js--change-category Опция 2
+                            li
+                                a(href="").js--change-category Опция 3
+
+                    label
+                        input(type="text" name="search" placeholder="Поиск товара").inp.required
+
+                    input(type="submit" value="").inp-submit.js--form-submit
+
+                .header--basket.dropdown-wrap
+                    span.header--current-mobile 75
+
+                    .header--basket-empty.hidden-block
+                        span Ваша корзина пуста
+
+                    .header--basket-full.flex-between.flex-vertical
+                        .header--basket-icon
+
+                        .header--basket-current
+                            span
+                                i 3
+                                =" товара"
+                            i.js--open-dropdown
+
+                        span.header--basket-summ 3200 р.
+
+                        .dropdown
+                            .bg-wrap
+                                .empty.hidden-block
+                                    p Ваша корзина пуста. Перейдите в интересующий Вас раздел для совершения покупки
+
+                                .full
+                                    ul(data-url="../../../js/ajax/remove-basket.php" data-method="post").header--basket-list
+                                        li(data-id="id_1")
+                                            a(href="").header--basket-list--img
+                                                img(src="../../../img/img--item.jpg" alt /)
+
+                                            .header--basket-list--content
+                                                span Deux par Deux, Комбинезон...
+
+                                                span
+                                                    strong 1x1450 руб.
+
+                                            a(href="").header--basket-list--remove.js--delete-header-item
+                                        li(data-id="id_2")
+                                            a(href="").header--basket-list--img
+                                                img(src="../../../img/img--item.jpg" alt /)
+
+                                            .header--basket-list--content
+                                                span Deux par Deux, Комбинезон...
+
+                                                span
+                                                    strong 1x1450 руб.
+
+                                            a(href="").header--basket-list--remove.js--delete-header-item
+                                        li(data-id="id3")
+                                            a(href="").header--basket-list--img
+                                                img(src="../../../img/img--item.jpg" alt /)
+
+                                            .header--basket-list--content
+                                                span Deux par Deux, Комбинезон...
+
+                                                span
+                                                    strong 1x1450 руб.
+
+                                            a(href="").header--basket-list--remove.js--delete-header-item
+                                        li(data-id="id4")
+                                            a(href="").header--basket-list--img
+                                                img(src="../../../img/img--item.jpg" alt /)
+
+                                            .header--basket-list--content
+                                                span Deux par Deux, Комбинезон...
+
+                                                span
+                                                    strong 1x1450 руб.
+
+                                            a(href="").header--basket-list--remove.js--delete-header-item
+                                        li(data-id="id5")
+                                            a(href="").header--basket-list--img
+                                                img(src="../../../img/img--item.jpg" alt /)
+
+                                            .header--basket-list--content
+                                                span Deux par Deux, Комбинезон...
+
+                                                span
+                                                    strong 1x1450 руб.
+
+                                            a(href="").header--basket-list--remove.js--delete-header-item
+
+                                    .flex-between
+                                        span Итоговая цена
+                                        span.value 37500 руб.
+
+                                    a(href="").btn В корзину
+
+        .header--bottom
+            ul.flex-between
+                li.dropdown-wrap
+                    a(href="") Одежда
+
+                    a(href="").mobile-icon.js--open-menu
+
+                    ul.inner-list.dropdown
+                        li
+                            a(href="") Внутренний пункт 1
+                        li
+                            a(href="") Внутренний пункт 2
+                        li
+                            a(href="") Lkb выало выадоыв адолыва долыва олдыва
+
+                li
+                    a(href="") Обувь
+                li
+                    a(href="") Аксессуары
+                li
+                    a(href="") Школа
+                li
+                    a(href="") Питание
+                li
+                    a(href="") Самым маленьким
+                li
+                    a(href="") Гигиена дома
+                li
+                    a(href="") Игрушки
+                li
+                    a(href="") Игры и творчество
+                li
+                    a(href="") Спорт и отдых
+
+                li.dropdown-wrap
+                    a(href="") Подарки
+
+                    a(href="").mobile-icon.js--open-menu
+
+                    ul.inner-list.dropdown
+                        li
+                            a(href="") Внутренний пункт 1
+                        li
+                            a(href="") Внутренний пункт 2
+                        li
+                            a(href="") Lkb выало выадоыв адолыва долыва олдыва
+
+                li.dropdown-wrap
+                    a(href="").active.bio Биопродукты
+
+                    a(href="").mobile-icon.js--open-menu
+
+                    ul.inner-list.dropdown
+                        li
+                            a(href="") Внутренний пункт 1
+                        li
+                            a(href="") Внутренний пункт 2
+                        li
+                            a(href="") Lkb выало выадоыв адолыва долыва олдыва
+

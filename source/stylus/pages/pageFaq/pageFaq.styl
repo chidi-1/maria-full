@@ -1,0 +1,79 @@
+.faq
+  h2
+    margin-bottom 43px
+
+  .accordeon
+    width 880px
+    position relative
+    margin-left 30px
+
+    @media nb
+      width auto
+      text-align left
+
+    &:after
+      position absolute
+      content ""
+      width 184px
+      height 207px
+      background url("../img/img--faq.png") no-repeat 0 0
+      right -229px
+      top 2px
+
+      @media nb
+        right 0
+        top -122px
+        zoom 0.7
+
+      @media mb
+        display none
+
+    .acc__trigger
+      display block
+      cursor pointer
+      padding 25px 0 15px 60px
+      margin-bottom 0
+
+      @media nb
+        text-align left
+
+      i
+        display inline-block
+        vertical-align top
+        width 38px
+        height 39px
+        background url("../img/bg--number.png") no-repeat 0 0
+        font-weight bold
+        padding-left 3px
+        text-align center
+        line-height 38px
+        font-family $fUbuntu
+        margin-left -60px
+        font-style normal
+        font-size 20px
+        margin-right 20px
+        margin-top -6px
+
+        &:after
+          content "+"
+
+      &.active
+        i
+          background url("../img/bg--number-gray.png") no-repeat 0 0
+
+          &:after
+            content "-"
+
+    .acc__container
+      .text
+        display block
+        margin-bottom 30px
+        padding 25px 55px
+        background url("../img/bg--partner.png") no-repeat 0 0
+        background-size 100% 100%
+
+        @media mb
+          background none
+          padding 20px
+          margin-bottom 0
+        

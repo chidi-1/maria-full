@@ -1,0 +1,197 @@
+.psevdofooter
+  height 277px
+
+  @media tb
+    height 171px
+
+  @media xs
+    height 303px
+
+.footer
+  padding 45px 0 55px 0
+  background-color #3f4954
+  position absolute
+  left 0
+  right 0
+  bottom 0
+
+  @media tb
+    padding 25px 0
+
+  span,
+  a,
+  p
+    color $cWhite
+
+  .width-wrap
+    padding 0 22px 0 35px
+
+    @media nb
+      padding 0
+
+    @media tb
+      display block !important
+      position relative
+      margin 0 15px
+
+  .col-sm-4
+    width 33.3%
+
+    @media tb
+      width 100%
+
+  .footer__col1
+    padding-top 10px
+
+    p.address
+      font-size 13px 
+      margin-bottom 37px
+      color #ccced1
+
+      @media xs
+        text-align center
+        margin-bottom 20px
+
+    .tels-block
+      @media tb
+        display none
+
+
+  .tels-block
+    .footer__tel
+      display block
+      margin 5px
+
+      a
+        font-size 24px
+        font-family $fUbuntu_m
+
+        @media nb
+          font-size 22px
+
+      span
+        font-size 13px
+        color #ccced1
+        margin-left 21px
+
+  .footer__col2
+    @media tb
+      text-align center
+
+    .sprite-call
+      background url("../img/spritesheet.png") no-repeat -534px -21px
+      width 46px
+      height 46px
+      display block
+      margin 9px auto 17px
+
+      @media tb
+        display inline-block
+        vertical-align top
+        margin 0
+
+    .tels-block
+      @media tb
+        display inline-block
+        vertical-align top
+        margin 0 30px
+
+    .footer__tel
+      text-align center
+      margin-bottom 35px
+
+      @media tb
+        display inline-block
+        vertical-align top
+        margin-bottom 0
+
+      span
+        display block
+
+    .developed-by
+      display block
+      text-align center
+
+      @media tb
+        display inline-block
+        vertical-align top
+
+      @media xs
+        display block
+        margin-top 15px
+
+      span
+        color $cWhite
+        margin-right 15px
+
+        @media tb
+          display none
+
+        @media xs
+          display inline-block
+          vertical-align top
+
+  .footer__col3
+    .socials-list
+      text-align right
+      margin-bottom 45px
+
+      @media tb
+        position absolute
+        top 0
+        right 0
+
+      @media xs
+        display block
+        position relative
+        text-align center
+        margin-top 20px
+        margin-bottom 15px
+
+      li
+        margin-left 40px
+
+        @media tb
+          margin-left 30px
+
+        @media xs
+          margin 0 10px
+
+        a
+          display block
+
+          &.socials-list__el-fb
+            width 19px
+            height 31px
+            background url("../img/spritesheet.png") no-repeat -140px -319px
+
+            &:hover
+                  background-position -201px -319px
+
+          &.socials-list__el-tw
+            width 33px
+            height 28px
+            background url("../img/spritesheet.png") no-repeat -872px -216px
+
+            &:hover
+                  background-position -688px -446px
+
+          &.socials-list__el-vk
+            width 39px
+            height 27px
+            background url("../img/spritesheet.png") no-repeat -763px -446px
+
+            &:hover
+                  background-position -844px -446px
+
+          &.socials-list__el-in
+            width 29px
+            height 29px
+            background url("../img/spritesheet.png") no-repeat -533px -459px
+
+            &:hover
+                  background-position -604px -459px
+
+    img
+      @media tb
+        display none

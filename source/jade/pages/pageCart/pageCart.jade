@@ -1,0 +1,194 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        section.cart.header--padding
+            .width-wrap
+
+                h2 Корзина
+                    =" "
+                    i (Шаг Первый)
+
+                .cart-empty.hidden-block
+                    p Ваша корзина пуста. Перейдите в интересующий Вас раздел для совершения покупки
+
+                .cart-full
+                    form(action="" method="post" data-discount-url="../../../js/ajax/discount-basket.php" data-change-url="../../../js/ajax/change-basket.php" data-remove-url="../../../js/ajax/remove-basket.php").main-form.js--form-submit-default
+                        .cart-list-wrap
+                            ul.cart-list.cart-list--left
+                                li.title.flex-between
+                                    .cart-list--img
+                                    .cart-list--art
+                                        span Артикул
+                                    .cart-list--title
+                                        span Название
+                                    .cart-list--amount
+                                        span Кол-во
+                                    .cart-list--cost
+                                    .cart-list--total
+                                        span Стоимость
+                                    .cart-list--remove
+
+                            ul.cart-list.cart-list--slider
+                                li(data-id="id_1" id="id_1").flex-between
+                                    .cart-list--img
+                                        div
+                                            img(src="../../../img/img--item.jpg" alt /)
+
+                                    .cart-list--art
+                                        span DD-D-705-W16-003
+
+                                    .cart-list--title
+                                        span Deux par Deux, Комбинезон зимний 226гр.
+                                        span (синий джинс/принт елочка)
+                                        input(type="hidden" name="id_1" value="Товар1")
+
+                                    .cart-list--amount
+                                        input(type="text" name="id_1" maxlength="7").inp.inp-number
+
+                                    .cart-list--cost
+                                        span 2325
+
+                                    .cart-list--total
+                                        span 999.999 р.
+
+                                    .cart-list--remove
+                                        a(href="").js--delete-item Удалить
+                                            br
+                                            ="товар"
+
+                                li(data-id="id_2" id="id_2").flex-between
+                                    .cart-list--img
+                                        div
+                                            img(src="../../../img/img--item.jpg" alt /)
+
+                                    .cart-list--art
+                                        span DD-D-705-W16-003
+
+                                    .cart-list--title
+                                        span Deux par Deux, Комбинезон зимний 226гр.
+                                        span (синий джинс/принт елочка)
+                                        input(type="hidden" name="id_1" value="Товар1")
+
+                                    .cart-list--amount
+                                        input(type="text" name="id_1" value="3" maxlength="7").inp.inp-number
+
+                                    .cart-list--cost
+                                        span 2325
+
+                                    .cart-list--total
+                                        span 999.999 р.
+
+                                    .cart-list--remove
+                                        a(href="").js--delete-item Удалить
+                                            br
+                                            ="товар"
+
+                                li(data-id="id_1" id="id_1").flex-between
+                                    .cart-list--img
+                                        div
+                                            img(src="../../../img/img--item.jpg" alt /)
+
+                                    .cart-list--art
+                                        span DD-D-705-W16-003
+
+                                    .cart-list--title
+                                        span Deux par Deux, Комбинезон зимний 226гр.
+                                        span (синий джинс/принт елочка)
+                                        input(type="hidden" name="id_1" value="Товар1")
+
+                                    .cart-list--amount
+                                        input(type="text" name="id_1" maxlength="7").inp.inp-number
+
+                                    .cart-list--cost
+                                        span 2325
+
+                                    .cart-list--total
+                                        span 999.999 р.
+
+                                    .cart-list--remove
+                                        a(href="").js--delete-item Удалить
+                                            br
+                                            ="товар"
+
+                                li(data-id="id_1").flex-between
+                                    .cart-list--img
+                                        div
+                                            img(src="../../../img/img--item.jpg" alt /)
+
+                                    .cart-list--art
+                                        span DD-D-705-W16-003
+
+                                    .cart-list--title
+                                        span Deux par Deux, Комбинезон зимний 226гр.
+                                        span (синий джинс/принт елочка)
+                                        input(type="hidden" name="id_1" value="Товар1")
+
+                                    .cart-list--amount
+                                        input(type="text" name="id_1" maxlength="7").inp.inp-number
+
+                                    .cart-list--cost
+                                        span 2325
+
+                                    .cart-list--total
+                                        span 999.999 р.
+
+                                    .cart-list--remove
+                                        a(href="").js--delete-item Удалить
+                                            br
+                                            ="товар"
+
+                                li(data-id="id_1").flex-between
+                                    .cart-list--img
+                                        div
+                                            img(src="../../../img/img--item.jpg" alt /)
+
+                                    .cart-list--art
+                                        span DD-D-705-W16-003
+
+                                    .cart-list--title
+                                        span Deux par Deux, Комбинезон зимний 226гр.
+                                        span (синий джинс/принт елочка)
+                                        input(type="hidden" name="id_1" value="Товар1")
+
+                                    .cart-list--amount
+                                        input(type="text" name="id_1").inp.inp-number
+
+                                    .cart-list--cost
+                                        span 2325
+
+                                    .cart-list--total
+                                        span 999.999 р.
+
+                                    .cart-list--remove
+                                        a(href="").js--delete-item Удалить
+                                            br
+                                            ="товар"
+
+                            ul.cart-list.cart-list--bottom
+                                li.total.flex-between
+                                    .cart-list--discount
+                                        input(type="text" name="discount" placeholder="Введите промокод").inp
+                                        a(href="").decor-link-ok.js--card-discount
+                                            span Активировать
+
+                                    .cart-list--amount
+                                        span 1999
+
+                                    .cart-list--cost
+
+                                    .cart-list--total
+                                        span 999.999 р.
+
+                                    .cart-list--remove
+
+                        .cart--btn
+                            input(type="submit" value="Продолжить").btn.btn-blue.js--form-submit
+                            span.notification (К выбору адреса и способа доставки)
+
+
+
+

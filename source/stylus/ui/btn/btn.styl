@@ -1,0 +1,109 @@
+.btn
+  display block
+  margin 0 auto
+  width 143px
+  height 72px
+  background url("../img/spritesheet.png")
+  font-family $fTtlimesslab
+  font-size 22px
+  line-height 72px
+  transition all 0.2s ease-in-out
+  outline none
+  border none
+  cursor pointer
+  text-align center
+
+  &.btn-blue
+    background-position -164px -21px
+    color $cBlue_d
+  &.btn-blue.btn-l
+    width 221px 
+    height 65px
+    background url("../img/bg--btn-l.png")
+    line-height 60px
+  &.btn-orange
+    background-position -349px -21px
+    color $cOrange
+  &.btn-red
+    background-position -21px -135px
+    color $cPink
+  &.btn-green
+    background-position -206px -135px
+    color $cGreen
+
+  &:hover
+    color $cWhite
+
+
+
+.decor-link-left
+  span
+    padding-left 51px
+    position relative
+    font-family $fUbuntu_m
+    color $cGray
+
+    &:before
+      position absolute
+      content ""
+      width 39px
+      height 39px
+      background url("../img/icon--arrow-left-blue.png") no-repeat 0 0
+      left 0
+      top 50%
+      margin-top -20px
+
+.decor-link-ok
+  span
+    padding-left 51px
+    position relative
+    font-family $fUbuntu_m
+    color $cGray
+
+    &:before
+      position absolute
+      content ""
+      width 38px
+      height 39px
+      background url("../img/icon--arrow-bottom-blue.png") no-repeat 0 0
+      left 0
+      top 50%
+      margin-top -20px
+
+.decor-left
+  span
+    padding-left 51px
+    position relative
+    font-family $fUbuntu_m
+    color $cGray
+
+    &:before
+      position absolute
+      content ""
+      width 38px
+      height 39px
+      background url("../img/bg--decor-btn.png") no-repeat 0 0
+      left 0
+      top 50%
+      margin-top -20px
+
+.decor-left-remove
+  span
+    padding-left 51px
+    position relative
+    font-family $fUbuntu_m
+    color $cGray
+
+    &:before
+      position absolute
+      content ""
+      width 38px
+      height 39px
+      background url("../img/icon--close.png") no-repeat 0 0
+      left 0
+      top 50%
+      margin-top -20px
+
+  &:hover
+    span:before
+      background url("../img/icon--close.png") no-repeat 0 -39px

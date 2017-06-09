@@ -1,0 +1,844 @@
+.cart
+  .width-wrap
+    position relative
+
+  .pagination
+    @media tb
+      padding-left 100px
+
+    @media xs
+      padding-left 0
+
+  span.mobile-text
+    display none
+
+    @media tb
+      display block
+      font-weight bold
+      font-size 13px
+
+  .cart--img-prise
+    float right
+    margin-right 5px
+    margin-top 37px
+
+    @media nb
+      position absolute
+      top -115px
+      right 0
+      z-index 10
+
+    @media mb
+      width 140px
+      top -75px
+
+    @media xs
+      display none
+
+  .cart-list-wrap
+    padding-left 75px
+    padding-right 130px
+    margin-bottom 50px
+
+    @media tb
+      padding 0
+      padding-left 100px
+
+    .cart-list
+
+      @media tb
+        display inline-block !important
+        vertical-align top
+
+      &.cart-list--bottom
+        @media tb
+          display block !important
+          margin-bottom 0
+          width auto
+
+        li:last-child
+          @media tb
+            padding-bottom 0
+
+
+        .cart-list--amount
+          @media tb
+            width 50%
+            text-align right
+            padding-right 5%
+            display inline-block
+            vertical-align top
+            margin-right 0
+
+          @media xs
+            display block
+            width auto
+            text-align center
+            padding 0
+
+          span
+            @media tb
+              fonf-size 20px
+
+              &:before
+                @media tb
+                  content "Итого:"
+                  padding-right 20px
+
+              &:after
+                @media tb
+                  content "шт."
+                  padding-left 5px
+
+        .cart-list--remove,
+        .cart-list--cost
+          @media tb
+            display none
+
+        .cart-list--total
+          @media tb
+            width 49%
+            text-align left
+            padding-left 5%
+            display inline-block
+            vertical-align top
+
+          @media xs
+            display block
+            width auto
+            text-align center
+            padding 0
+            margin-bottom 30px
+
+          span
+            @media tb
+              fonf-size 20px
+
+      &.cart-list--left
+        @media tb
+          width 98px
+          display inline-block !important
+          vertical-align top
+          margin-left -100px
+          text-align left
+
+        .cart-list--total
+          @media tb
+            text-align left
+
+      &.cart-list--slider
+        @media tb
+          width 99%
+          padding-bottom 30px
+
+        li.flex-between
+          padding-bottom 4px
+
+          @media tb
+            display inline-block !important
+            vertical-align top
+
+        .owl-nav
+          div
+            position absolute
+            bottom -40px
+            left 50%
+            width 47px
+            height 46px
+            background url(../img/spritesheet.png) no-repeat 0 0
+            opacity 0.8
+            transition all 0.2s ease-in-out
+            z-index 10
+            transform scale(0.7)
+            display none
+
+            @media tb
+              display inline-block
+              vertical-align top
+
+            &:hover
+              opacity 1
+              transform scale(1)
+
+            &.owl-prev
+              background-position -685px -123px
+              margin-left -57px
+
+            &.owl-next
+              background-position -575px -597px
+              margin-left 10px
+
+      &.cart-list--history
+        width 835px
+        position relative
+
+        @media tb
+          width auto
+
+        &.cart-list--left
+          @media tb
+            width 98px
+
+          .cart-list--img
+              @media tb
+                text-align center
+
+              div
+                @media tb
+                  display block
+                  margin 0 auto
+
+            .cart-list--total,
+            .cart-list--delivery,
+            .cart-list--stat,
+            .cart-list--date
+              @media tb
+                text-align left
+                padding-bottom 10px
+
+            .cart-list--amount
+              @media tb
+                text-align left
+                height auto
+                padding-bottom 10px
+
+              a
+                @media tb
+                  color $cGray
+
+        &.cart-list--slider
+          @media tb
+            width 99%
+
+        &.cart-list--slider
+          li
+            @media tb
+              display block !important
+              text-align center
+
+            .cart-list--img
+              @media tb
+                text-align center
+
+              div
+                @media tb
+                  display block
+                  margin 0 auto
+
+            .cart-list--total,
+            .cart-list--delivery,
+            .cart-list--stat,
+            .cart-list--date
+              @media tb
+                text-align center
+                padding-bottom 10px
+
+            .cart-list--amount
+              @media tb
+                text-align center
+                height auto
+                padding-bottom 10px
+
+              a
+                @media tb
+                  color $cGray
+
+
+        li
+          padding-bottom 4px
+
+          @media tb
+            display inline-block !important
+            vertical-align top
+
+          & > .flex-between
+            @media tb
+              display block !important
+
+          .cart-list--date,
+          .cart-list--amount,
+          .cart-list--stat,
+          .cart-list--delivery,
+          .cart-list--total
+            display inline-block
+            vertical-align top
+            width 140px
+            text-align left
+
+            @media tb
+              display block !important
+              width auto
+
+          .cart-list--total
+            margin-top 0
+
+          a,
+          span
+            font-size 14px
+            font-weight bold
+
+          a
+            color $cBlue_d
+
+          .cart-list--number
+            width 150px
+
+            @media tb
+              display block
+              width auto
+              padding-bottom 10px
+
+      li
+        display block
+        border-bottom 1px solid #a8b6c6
+        padding  22px 0 20px
+
+        @media tb
+          padding 0 5px
+          border-bottom none
+          border-right 1px solid #a8b6c6
+
+        &:after
+          @media tb
+            position absolute
+            content ""
+            left -2px
+            top 0
+            width 3px
+            height 68px
+            background $cWhite
+
+        &:before
+          @media tb
+            position absolute
+            content ""
+            right -5px
+            top 0
+            width 6px
+            height 68px
+            background $cWhite
+
+        &.open-next
+          border-bottom none
+
+        .item--list-wrap
+          background url("../img/bg--item-list.png") no-repeat 50% 50%
+          background-size 100% 100%
+          padding 20px 30px
+          border-bottom none
+          display none
+          overflow-x hidden
+          margin 0 -30px
+
+          .flex-between
+            margin-bottom 7px
+
+          .cart-list--art
+            width 147px
+            padding-right 10px
+
+          .cart-list--amount
+            width 60px
+            margin-right 10px
+
+          .cart-list--title
+            width 500px
+            padding-right 10px
+
+            @media nb
+              width 370px
+
+            @media tb
+              display block
+              width 100%
+
+          .cart-list--total
+            width 120px
+            margin-top 0
+
+        span
+          font-weight bold
+          color $cGray
+          display block
+
+        &.title
+          padding 10px 0 10px
+
+          @media tb
+            display block !important
+            padding-top 0
+
+          span
+            color $cBlue_d
+
+        &.total
+          padding 30px 0
+          align-items center
+          border-bottom none
+
+          @media tb
+            display block !important
+            border-right none
+
+          span
+            font-size 24px
+
+          .decor-link-ok
+            margin-top 11px
+            display inline-block
+            vertical-align top
+
+            span
+              font-size 14px
+
+      &--img
+        display inline-block
+        vertical-align top
+        width 75px
+        height 50px
+        margin-left -75px
+        text-align center
+
+        @media nb
+          margin-right 13px
+
+        @media tb
+          display block
+          width 100%
+          background $cWhite
+          margin-left -1px
+          margin-right -1px
+          height 68px
+          padding 10px 0
+
+        div
+          display flex
+          align-items center
+          justify-content center
+          width 48px
+          height 48px
+          box-sizing border-box
+          padding 2px
+          border 3px solid $cGray_l
+          border-radius 13px 6px 12px 8px
+          text-align center
+          margin-left 11px
+
+          @media tb
+            margin-top 0
+            margin-left 0
+
+          img
+            display block
+            margin 0 auto
+            max-width 100%
+            max-height 100%
+
+      &--remove
+        display inline-block
+        vertical-align top
+        width 190px
+        margin-right -130px
+        margin-top -4px
+
+        @media tb
+          display block
+          width 100%
+          height 45px
+          margin-top 0px
+          text-align center
+
+        a
+          display inline-block
+          vertical-align top
+          font-weight bold
+          color $cGray
+          padding-left 50px
+          margin-left 25px
+          position relative
+
+          @media tb
+            margin-left 0
+            text-align left
+
+          &:before
+            position absolute
+            content ""
+            left 0
+            top 50%
+            margin-top -14px
+            width 38px
+            height 39px
+            background url(../img/icon--close.png) no-repeat 0 0
+
+      &--reload
+        display inline-block
+        vertical-align top
+        width 55px
+        margin-right -70px
+        margin-top -4px
+        position relative
+        padding-bottom 10px
+
+        @media tb
+          display block
+          width 100%
+          margin-right 0
+          text-align center
+
+        a
+          display inline-block
+          vertical-align top
+          font-weight bold
+          color $cGray
+          padding-left 50px
+          position relative
+          width 38px
+          height 39px
+          background url("../img/icon--reload.png") no-repeat 0 0
+
+          @media tb
+            position static
+
+          &:hover
+            background url("../img/icon--reload.png") no-repeat 0 -39px
+
+            &:after
+              opacity 1
+
+          &:after
+            content "Повторить заказ"
+            position absolute
+            width 150px
+            top 50%
+            margin-top -9px
+            opacity 0
+            transition all 0.1s ease-in-out
+
+            @media tb
+              left 0
+              right 0
+              top auto
+              bottom 0
+              text-align center
+              width auto
+
+      &--art
+        display inline-block
+        vertical-align top
+        width 185px
+        padding-right 20px
+
+        @media tb
+          display block
+          width 100%
+          padding-right 0
+          padding-bottom 20px
+          min-height 35px
+
+      &--title
+        display inline-block
+        vertical-align top
+        width 375px
+        padding-right 20px
+
+        @media tb
+          display block
+          width 100%
+          height 110px
+          position relative
+
+        &:after
+          @media tb
+            position absolute
+            content ""
+            left 0
+            right 0
+            bottom 0
+            height 30px
+            background linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+
+      &--amount
+        display inline-block
+        vertical-align top
+        width 80px
+        text-align center
+        margin-right 20px
+
+        @media tb
+          display block
+          width 100%
+          text-align left
+          padding-bottom 10px
+          height 45px
+          margin-right 0
+
+        .inp
+          padding-left 0
+          width 76px
+          color $cGray
+          text-align center
+          margin-bottom 0
+
+          @media tb
+            width 100%
+
+      &--cost
+        display inline-block
+        vertical-align top
+        width 90px
+        padding-top 9px
+
+        @media tb
+          display block
+          width 100%
+          height 25px
+          text-align center
+          padding-top 0
+          padding-bottom 10px
+
+      &--total
+        display inline-block
+        vertical-align top
+        text-align center
+        width 190px
+        margin-top 8px
+
+        @media tb
+          display block
+          width 100%
+          padding-bottom 30px
+
+      &--discount
+        display inline-block
+        vertical-align top
+        width 643px
+        margin-left -75px
+        padding-left 11px
+        box-sizing border-box
+
+        @media tb
+          display block !important
+          margin-left 0
+          text-align center
+          width auto
+          padding-left 0
+
+        .inp
+          width 200px
+          text-align center
+          padding-left 0
+          margin-right 45px
+          margin-bottom 0
+
+          @media tb
+            margin 0 20px 35px
+
+          @media xs
+            width 100%
+            display block
+            margin-left 0
+            margin-right 0
+
+        a
+          @media tb
+            width 200px
+            margin 0 20px 35px
+
+          @media xs
+            margin-left 0
+            margin-right 0
+
+  .cart--btn
+    text-align center
+    display block
+    position relative
+
+    @media tb
+      padding-left 100px
+
+    span.notification
+      position absolute
+      color $cBrown
+      left 50%
+      margin-left 100px
+      top 30px
+
+      @media tb
+        position relative
+        display block
+        text-align center
+        margin-left 0px
+        left auto
+
+.cart--delivery
+  .flex-between
+    @media mb
+      display block !important
+
+    .one-half:first-child
+      padding-left 25px
+
+      @media tb
+        padding-left 0
+
+      .flex-between
+        @media mb
+          display flex !important
+
+        @media xs
+          display block !important
+
+    .one-half:last-child
+      padding-left 48px
+
+      @media tb
+        padding-left 0
+        position relative
+
+      &:after
+        @media tb
+          position absolute
+          content ""
+          width 200px
+          height 200px
+          background url("../img/img--cards.png") no-repeat 0 0
+          background-size 100% auto
+          top 20px
+          right 0
+
+        @media xs
+          display none
+
+      label.radio
+        @media mb
+          display block
+
+  h2
+    i
+      @media mb
+        display block
+
+  h3
+    padding-left 38px
+
+    @media tb
+      padding-left 0
+
+  .main-form
+    label.radio
+      @media mb
+        display inline-block
+        vertical-align top
+
+      @media xs
+        display block
+
+    .inp.inp-m
+      @media mb
+        display inline-block
+        vertical-align top
+        width 48%
+        padding-left 17px
+
+      @media xs
+        display block
+        width 100%
+
+    .inp.inp-s
+      @media mb
+        display inline-block
+        vertical-align top
+        width 32%
+        padding-left 17px
+
+      @media xs
+        display block
+        width 100%
+
+    .has-adress
+      width 308px
+      margin-top -11px
+
+      @media tb
+        width 408px
+
+      @media mb
+        display inline-block
+        vertical-align top
+        width 308px
+
+      @media xs
+        display block
+        width 100%
+
+      .jq-selectbox
+        width 308px
+
+        @media tb
+          width 408px
+
+        @media mb
+          width 100%
+
+    & > .flex-between
+      @media tb
+        display block !important
+
+  .new-adress
+    width 100%
+    margin-top -12px
+
+    .jq-selectbox
+      width 100%
+
+  &-cards
+    display block
+    margin-left 5px
+    margin-top 49px
+    margin-bottom 61px
+
+    @media tb
+      display none
+
+    @media mb
+      display none
+
+  &-btns
+    margin-top 37px
+    margin-left 32px
+
+    @media tb
+      margin-left 0
+      text-align center
+      margin-top 0
+
+    @media mb
+      margin-left 0
+      text-align center
+      margin-top 0
+
+    a
+      @media tb
+        display block
+        margin 0 auto 30px
+
+    .decor-link-left
+      margin-top 27px
+      margin-right 293px
+      display inline-block
+      vertical-align top
+
+      @media tb
+        margin-right 20px
+
+      @media mb
+        margin-top 0px
+        display block
+
+    .btn
+      display inline-block
+      vertical-align top
+
+      @media mb
+        display block

@@ -1,0 +1,93 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        section.cart--delivery.header--padding
+
+            .width-wrap
+
+                h2 Доставка и оплата
+                    =" "
+                    i (Шаг второй)
+
+
+                form(action="" method="post").main-form.js--form-submit-default
+                    .flex-between
+                        .one-half
+                            h3 Способ доставки и адрес
+
+                            label.radio
+                                input(type="radio" checked name="delivety_type" value="1").hidden-block
+
+                                .psevdoradio
+
+                                span Самовывоз
+
+                            .flex-between
+                                label.radio
+                                    input(type="radio" name="delivety_type" value="2").hidden-block.js--change-info
+
+                                    .psevdoradio
+
+                                    span Доставка по адресу
+
+                                .dev--info.has-adress.disabled
+                                    select(name="").js--select-styled
+                                        option(value="Адрес 1" selected=) Адрес 1
+                                        option(value="Адрес 2") Адрес 2
+                                        option(value="Адрес 3") Адрес 3
+
+
+                            label.radio
+                                input(type="radio" name="delivety_type" value="3").hidden-block.js--change-info
+
+                                .psevdoradio
+
+                                span Новый адрес
+
+                            .dev--info.new-adress.disabled
+                                select(name="region").js--select-styled
+                                    option(value="" selected disabled) Выберите регион доставки
+                                    option(value="Регион1") Регион 1
+                                    option(value="Регион2") Регион 2
+                                    option(value="Регион3") Регион 3
+
+                                .flex-between
+                                    input(type="text" name="" placeholder="Город").inp.required.inp-m
+                                    input(type="text" name="" placeholder="Улица").inp.required.inp-m
+
+                                .flex-between
+                                    input(type="text" name="" placeholder="Дом").inp.required.inp-s
+                                    input(type="text" name="" placeholder="Корпус/строение").inp.inp-s
+                                    input(type="text" name="" placeholder="Квартира").inp.inp-s
+
+                        .one-half
+                            img(src="../../../img/img--cards.png" alt).cart--delivery-cards
+
+                            h3 Способ оплаты
+
+                            label.radio
+                                input(type="radio" checked name="pay_type" value="1").hidden-block
+
+                                .psevdoradio
+
+                                span Оплата  наличными
+
+                            label.radio
+                                input(type="radio" name="pay_type" value="1").hidden-block
+
+                                .psevdoradio
+
+                                span Онлайн (Visa/Mastercard)
+
+                    .cart--delivery-btns
+                        a(href="").decor-link-left
+                            span Вернуться в корзину
+                        input(type="submit" value="Оформить заказ").btn.btn-blue.js--form-submit
+
+                .cart-empty.hidden-block
+                    p Ваша корзина пуста
+

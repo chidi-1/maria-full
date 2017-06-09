@@ -1,0 +1,480 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    section.index--slider
+        div(style="background: url(../../../img/banner1.jpg) no-repeat 50% 50%").index--slider__el.index--slider__el-right.animation-wrap
+            .width-wrap.flex-between
+                div(data-animate="fadeInLeft").discount.discount-blue.animate-el
+                    .discount--text
+                        span.discount--text-val 70%
+                        span скидка
+
+                .banner-content
+                    img(src="../../../img/logo--seller1.png" data-animate="fadeInUp").banner-content--logo.animate-el
+
+                    .banner-content--text
+                        p(data-animate="fadeInUp").animate-el Val&amp;Max&nbsp;&mdash; это элегантная одежда для мальчиков, марка существует с&nbsp;1959&nbsp;года. После более чем пятидесятилетнего опыта работы в&nbsp;мире детской моды, Val&amp;Max сегодня создал элегантный и&nbsp;неподражаемый стиль одежды для маленьких принцесс Made in&nbsp;Italy.
+
+                    a(href="" data-animate="fadeInUp").btn.btn-blue.animate-el Коллекция
+
+        div(style="background: url(../../../img/banner2.jpg) no-repeat 50% 50%").index--slider__el.index--slider__el-left.animation-wrap
+            .width-wrap.flex-between
+                .banner-content
+                    img(src="../../../img/logo--seller1.png" data-animate="fadeInDown").banner-content--logo.animate-el
+
+                    div(data-animate="fadeInDown").banner-content--text.animate-el
+                        p Val&amp;Max&nbsp;&mdash; бла блабла длинный текст для теста бла бла бла бла блабла длинный текст для теста бла бла бла бла блабла длинный текст для теста бла бла бла бла блабла длинный текст для теста бла бла бла бла блабла длинный текст для теста бла бла бла бла блабла длинный текст для теста бла бла бла это элегантная одежда для мальчиков, марка существует с&nbsp;1959&nbsp;года. После более чем пятидесятилетнего опыта работы в&nbsp;мире детской моды, Val&amp;Max сегодня создал элегантный и&nbsp;неподражаемый стиль одежды для маленьких принцесс Made in&nbsp;Italy.
+
+                    a(href="" data-animate="fadeInDown").btn.btn-orange.animate-el Коллекция
+
+                div(data-animate="fadeInRight").discount.discount-orange.animate-el
+                    .discount--text
+                        span.discount--text-val 50%
+                        span скидка
+
+        div(style="background: url(../../../img/banner3.jpg) no-repeat 50% 50%").index--slider__el.index--slider__el-right.animation-wrap
+            .width-wrap.flex-between
+                div(data-animate="fadeInLeft").discount.discount-red.animate-el
+                    .discount--text
+                        span.discount--text-val 70%
+                        span скидка
+
+                .banner-content
+                    img(src="../../../img/logo--seller1.png" data-animate="fadeInRight").banner-content--logo.animate-el
+
+                    .banner-content--text
+                        p(data-animate="fadeInRight").animate-el Val&amp;Max&nbsp;&mdash; это элегантная одежда для мальчиков, марка существует с&nbsp;1959&nbsp;года. После более чем пятидесятилетнего опыта работы в&nbsp;мире детской моды, Val&amp;Max сегодня создал элегантный и&nbsp;неподражаемый стиль одежды для маленьких принцесс Made in&nbsp;Italy.
+
+                    a(href="" data-animate="fadeInRight").btn.btn-red.animate-el Коллекция
+
+        div(style="background: url(../../../img/banner4.jpg) no-repeat 50% 50%").index--slider__el.index--slider__el-left.animation-wrap
+            .width-wrap.flex-between
+
+                .banner-content
+                    img(src="../../../img/logo--seller2.png").banner-content--logo.banner-content--logo-left
+
+                    .banner-content--price
+                        span от
+                            strong 150
+                            br
+                            ="руб"
+
+                    .banner-content--text.text-brown
+                        span(data-animate="fadeInUp").title.animate-el Мир здоровья, красоты и&nbsp;долголетия-Твой Мир!
+
+                        p(data-animate="fadeInUp").animate-el Био- и&nbsp;органические продукты торговой марки BioLifestyle (Австрия). Мюсли, кранчи, крупы, и&nbsp;многое другое&nbsp;&mdash; для вегетарианцев, веганов, спортсменов, детей и&nbsp;просто всех тех, кто заботится о&nbsp;своем здоровье.
+
+                        p(data-animate="fadeInUp").animate-el
+                            strong Мы&nbsp;за&nbsp;то, чтобы качественные продукты продавались по&nbsp;справедливым ценам.
+
+                    a(href="").btn.btn-green Продукция
+
+    section.index--sell
+        .width-wrap
+            h2 Распродажа
+
+            .slider-item
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+
+    section.index--catrgory-sell
+        h2 Категории в которых идет распродажа
+
+        .slider-discount.item-slider-discount
+            a(href="").slider-discount__el.slider-discount__el-beige
+                img(src="../../../img/img--slider-docsount-1.png" alt /)
+
+                .content
+                    span.text-right Скидки до 30%
+                    span.name Платья
+                    .decor-left
+                        span Перейти в раздел
+
+            a(href="").slider-discount__el.slider-discount__el-blue
+                img(src="../../../img/img--slider-docsount-2.png" alt /)
+
+                .content
+                    span.text-right Скидки до 30%
+                    span.name Головные уборы
+                    .decor-left
+                        span Перейти в раздел
+
+
+            a(href="").slider-discount__el.slider-discount__el-brown
+                img(src="../../../img/img--slider-docsount-3.png" alt /)
+
+                .content
+                    span.text-right Скидки до 30%
+                    span.name Обувь
+                    .decor-left
+                        span Перейти в раздел
+
+            a(href="").slider-discount__el.slider-discount__el-beige
+                img(src="../../../img/img--slider-docsount-1.png" alt /)
+
+                .content
+                    span.text-right Скидки до 30%
+                    span.name Платья
+                    .decor-left
+                        span Перейти в раздел
+
+    section.actions-block
+        .width-wrap
+            h2 Акции
+
+            .actions-list.flex-between
+                .action__item
+                    a(href="").action__link.action__link1
+                        img(src="../../../img/pic8.jpg" alt /)
+
+                        .action__text
+                            .title  Спецпредложение
+                            p Val&amp;Max&nbsp;&mdash; это элегантная одежда для девочек, марка существует с&nbsp;1959&nbsp;года. После более чем пятидесятилетнего опыта работы в&nbsp;мире детской моды, Val&amp;Max сегодня создал элегантный и&nbsp;неподражаемый стиль одежды для маленьких принцесс Made in&nbsp;Italy.
+
+
+                .action__item
+                    a(href="").action__link.action__link2
+                        img(src="../../../img/pic9.jpg" alt /)
+
+                        .sprite.sprite-shape1
+                        p Летняя Акция!
+
+
+                .action__item
+                    a(href="").action__link.action__link3
+                        img(src="../../../img/pic10.png" alt /)
+
+                        p Осень
+                            span  2017
+
+    section.index--blog
+        .width-wrap
+            h2 Последние публикации в блоге:
+
+            ul.blog--list.flex-between
+                li
+                    img(src="../../../img/hedgehog.png")
+                    .content
+                        time 12.03.2017
+
+                        a(href="").title Как уберечь ребенка от простуды в садике
+
+                        p Многим родителям знакома ситуация когда ребенок ходит 2-3 дня в&nbsp;садик и&nbsp;потом 10-14 дней родители пытаются вылечить его от&nbsp;простуды или какого-то другого вирусного заболевания. И&nbsp;это может продолжаться очень долго, тем самым заставляя родителей нервничать, &laquo;кормить&raquo; ребенка нескончаемым потоком лекарств, и&nbsp;доставлять массу неудобств на&nbsp;работе. Вообщем в&nbsp;таких ситуациях как правило забот может быть хоть отбавляй, походы по&nbsp;поликлиникам, аптекам, отпрашивания с&nbsp;работы или просьбы родственников посидеть с&nbsp;любимым (хоть и&nbsp;не&nbsp;совсем здоровым) внучком, племянником, крестником.
+
+
+                        .data
+                            div
+                                img(src="../../../img/icon--eye.png" alt /)
+                                span 12544
+                            div
+                                img(src="../../../img/icon--comment.png" alt /)
+                                span 1003
+                            div
+                                img(src="../../../img/icon--like.png" alt /)
+                                span 600
+                li
+                    img(src="../../../img/bear.png")
+                    .content
+                        time 12.03.2017
+
+                        a(href="").title Как уберечь ребенка от простуды в садике
+
+                        p Многим родителям знакома ситуация когда ребенок ходит 2-3 дня в&nbsp;садик и&nbsp;потом 10-14 дней родители пытаются вылечить его от&nbsp;простуды или какого-то другого вирусного заболевания. И&nbsp;это может продолжаться очень долго, тем самым заставляя родителей нервничать, &laquo;кормить&raquo; ребенка нескончаемым потоком лекарств, и&nbsp;доставлять массу неудобств на&nbsp;работе. Вообщем в&nbsp;таких ситуациях как правило забот может быть хоть отбавляй, походы по&nbsp;поликлиникам, аптекам, отпрашивания с&nbsp;работы или просьбы родственников посидеть с&nbsp;любимым (хоть и&nbsp;не&nbsp;совсем здоровым) внучком, племянником, крестником.
+
+
+                        .data
+                            div
+                                img(src="../../../img/icon--eye.png" alt /)
+                                span 12544
+                            div
+                                img(src="../../../img/icon--comment.png" alt /)
+                                span 1003
+                            div
+                                img(src="../../../img/icon--like.png" alt /)
+                                span 600
+
+    section.index--sell
+        .width-wrap
+            h2 Ваш интересовали
+
+            .slider-item
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+                .slider-item__el
+                    .slider-item__el-discount
+                        span -30%
+
+                    a(href="").slider-item__el-img
+                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                    a(href="").slider-item__el-title Платье Aletta
+                    a(href="").slider-item__el-code Артикул
+
+                    ul.stars
+                        li.active
+                        li.active
+                        li.active
+                        li.active
+                        li
+
+                    span.slider-item__el-old-price 5 200 руб.
+                    span.slider-item__el-new-price 6 630 руб.
+                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                    .slider-item__el-links
+                        a(href="../../../img/img-old/pic2.jpg").fancy.btn.btn-show
+                        a(href="").btn.btn-basket.js--add-item
+
+    section.index--trend
+        .width-wrap
+            h2 Сейчас в тренде
+
+            .trends-slider
+                .trends-slider__el
+                    a(href="")
+                        img(src='../../../img/brand1.jpg' alt /)
+                .trends-slider__el
+                    a(href="")
+                        img(src='../../../img/brand2.jpg' alt /)
+                .trends-slider__el
+                    a(href="")
+                        img(src='../../../img/brand3.jpg' alt /)
+                .trends-slider__el
+                    a(href="")
+                        img(src='../../../img/brand4.jpg' alt /)
+                .trends-slider__el
+                    a(href="")
+                        img(src='../../../img/brand5.jpg' alt /)
+                .trends-slider__el
+                    a(href="")
+                        img(src='../../../img/brand6.jpg' alt /)
+
+
+
+
+

@@ -1,0 +1,202 @@
+.main-form
+  label.radio
+    display block
+    margin-bottom 52px
+    padding-left 37px
+    cursor pointer
+    min-width 200px
+
+    input
+      display none
+
+    .psevdoradio
+      display inline-block
+      vertical-align top
+      margin-left -37px
+      margin-right 21px
+      border 1px solid $cGray_l
+      border-radius 20px
+      width 16px
+      height 16px
+      background $cWhite
+      
+    input:checked +   .psevdoradio
+      background #ffffff url("../img/icon--heart.png") no-repeat 50% 50%
+
+    span
+      display inline-block
+      vertical-align top
+      width 95%
+      color $cBrown
+      font-family $fUbuntu_m
+
+  label.checkbox
+    display block
+    margin-bottom 18px
+    padding-left 37px
+    cursor pointer
+    min-width 200px
+
+    input
+      display none
+
+    .psevdocheckbox
+      display inline-block
+      vertical-align top
+      margin-left -37px
+      margin-right 21px
+      border 1px solid $cGray_l
+      border-radius 20px
+      width 16px
+      height 16px
+      background $cWhite
+
+    input:checked +   .psevdocheckbox
+      background #ffffff url("../img/icon--heart.png") no-repeat 50% 50%
+
+    span
+      display inline-block
+      vertical-align top
+      width 95%
+      color $cBrown
+      font-family $fUbuntu_m
+
+  .inp
+    display inline-block
+    vertical-align top
+    height 36px
+    outline none
+    border 1px solid $cGray_l
+    border-radius 20px
+    padding-left 37px
+    color $cBrown
+    font-family $fUbuntu_m
+    margin-bottom 30px
+
+    &.error
+      border 1px solid $cOrange
+
+    &.inp-l
+      width 100%
+
+    &.inp-m
+      width 48%
+
+      @media mb
+        display block
+        width 100%
+
+    &.inp-s
+      width 30%
+
+      @media mb
+        display block
+        width 100%
+
+
+  .inp::-webkit-input-placeholder
+    color $cGray_l
+  .inp::-moz-placeholder
+    color $cGray_l
+  .inp:-moz-placeholder
+    color $cGray_l
+  .inp:-ms-input-placeholder
+    color $cGray_l
+
+  .inp:focus::-webkit-input-placeholder
+    color transparent
+  .inp:focus::-moz-placeholder
+    color transparent
+  .inp:focus:-moz-placeholder
+    color transparent
+  .inp:focus:-ms-input-placeholder
+    color transparent
+
+  .jq-selectbox__select
+    box-shadow none !important
+    background $cWhite !important
+    border 1px solid $cGray_l !important
+    border-radius 30px
+    width 100%
+    height 38px
+    padding 0 35px 0 37px
+    position relative
+    margin-bottom 31px
+
+    .jq-selectbox__select-text
+      color $cBrown
+      font-family $fUbuntu_m
+      position relative
+      z-index 10
+      padding-top 2px
+
+    .jq-selectbox__trigger
+      border none
+      z-index 10
+
+      .jq-selectbox__trigger-arrow
+        border none
+        width 19px
+        height 19px
+        background url("../img/spritesheet.png") no-repeat -21px -21px
+        top 50%
+        margin-top -9px
+        right 10px
+        transition all 0.2s ease-in-out
+        filter grayscale(100%)
+
+        &:hover
+          filter grayscale(0)
+
+  .jq-selectbox__dropdown
+    padding-top 10px
+    border 1px solid $cGray_l
+    border-top none
+    border-radius 0 0 10px 10px
+    box-shadow none
+    background $cWhite
+    top 27px !important
+    z-index 11
+    padding-bottom 10px
+    bottom auto !important
+
+    &:before,
+    &:after
+      position absolute
+      content ""
+      width 5px
+      height 10px
+      background $cWhite
+      top -10px
+
+    &:before
+      left -1px
+      border-left 1px solid $cGray_l
+    &:after
+      right -1px
+      border-right 1px solid $cGray_l
+
+    ul
+      display block
+
+      li
+        display block
+        background transparent !important
+        color $cBrown !important
+        padding-left 37px
+
+        &:hover
+          text-decoration underline
+
+        &.disabled
+          display none
+
+  .disabled
+    .js--select-styled
+      pointer-events none
+
+    .jq-selectbox__select
+      pointer-events none
+
+      .jq-selectbox__select-text
+        color $cGray_l

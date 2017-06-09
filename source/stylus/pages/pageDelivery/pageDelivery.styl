@@ -1,0 +1,255 @@
+.condition
+  h2
+    margin-bottom 41px
+
+  h3
+    @media mb
+      text-align left
+
+  .flex-between
+    @media mb
+      display block !important
+
+  .one-half
+    @media tb
+      width 49%
+      display inline-block
+      vertical-align top
+
+    @media mb
+      display block
+      width auto
+
+  .text
+    p,
+    h3.brown,
+    span
+      color $cBrown
+      display block
+
+    p
+      margin-bottom 20px
+
+  .text
+    @media tb
+      margin-left 0 !important
+
+  ul
+    margin-bottom 25px
+
+    li
+      padding-left 12px
+      position relative
+      color $cBrown
+      display block
+      line-height 18px
+
+      &:before
+        position absolute
+        content "-"
+        left 0
+
+  ul.blue
+    li
+      color $cBlue_d
+      font-weight bold
+      margin-bottom 16px
+
+  .delivery
+    margin-bottom 60px
+
+    .text
+      margin-left 30px
+
+      @media tb
+        margin-left 0
+
+    .links
+      padding-left 12px
+      position relative
+
+      ul.blue
+        margin-left 72px
+        margin-top 48px
+
+        @media mb
+          margin-left 30px
+
+    .img--delivery-1
+      position absolute
+      right 98px
+      bottom - 195px
+
+      @media mb
+        bottom 0
+        top 27px
+
+  .tabs
+    padding-bottom 115px
+
+    @media mb
+      padding-bottom 30px
+
+    &__caption
+      margin-bottom 55px
+
+      @media tb
+        margin-left -5px
+
+      @media mb
+        display none
+
+      li
+        display inline-block
+        vertical-align top
+        line-height 60px
+        font-weight bold
+        color $cGray
+
+        @media tb
+          min-width 150px
+          background-size 100% 100%
+
+  .mobile-select
+    display none
+
+    @media mb
+      display block
+      margin 0 -15px 30px
+      background #eaeff4
+      padding 20px 15px
+
+    .jq-selectbox
+      width 100%
+
+    .jq-selectbox__select
+      box-shadow none !important
+      background $cWhite !important
+      border 1px solid $cGray_l !important
+      border-radius 30px
+      width 100%
+      height 38px
+      padding 0 35px 0 37px
+      position relative
+
+      .jq-selectbox__select-text
+        color $cBrown
+        font-family $fUbuntu_m
+        position relative
+        z-index 10
+        padding-top 2px
+
+      .jq-selectbox__trigger
+        border none
+        z-index 10
+
+        .jq-selectbox__trigger-arrow
+          border none
+          width 19px
+          height 19px
+          background url("../img/spritesheet.png") no-repeat -21px -21px
+          top 50%
+          margin-top -9px
+          right 10px
+          transition all 0.2s ease-in-out
+          filter grayscale(100%)
+
+          &:hover
+            filter grayscale(0)
+    .jq-selectbox__dropdown
+      padding-top 10px
+      border 1px solid $cGray_l
+      border-top none
+      border-radius 0 0 10px 10px
+      box-shadow none
+      background $cWhite
+      top 27px !important
+      z-index 11
+      padding-bottom 10px
+      bottom auto !important
+
+      &:before,
+      &:after
+        position absolute
+        content ""
+        width 5px
+        height 10px
+        background $cWhite
+        top -10px
+
+      &:before
+        left -1px
+        border-left 1px solid $cGray_l
+
+      &:after
+        right -1px
+        border-right 1px solid $cGray_l
+
+      ul
+        display block
+        margin-bottom 0
+
+        li
+          display block
+          background transparent !important
+          color $cBrown !important
+          padding-left 37px
+
+          &:before
+            display none
+
+          &:hover
+            text-decoration underline
+
+          &.disabled
+            display none
+
+  .tabs__content
+
+    .flex-between
+      align-items center
+
+    .links
+      display inline-flex
+      align-items center
+
+      @media tb
+        display inline-block
+        vertical-align top
+
+      @media mb
+        display block
+
+    .links-img
+      display inline-block
+      vertical-align top
+      margin 0 40px 3px 72px
+
+      @media tb
+        margin-left 0
+        margin-bottom 20px
+
+      @media mb
+        float right
+        margin-right 0
+
+    ul.blue
+      display inline-block
+      vertical-align top
+      width 200px
+      margin-bottom 0
+
+      @media mb
+        margin-bottom 30px
+
+    .one-half.text
+      width 600px
+
+
+  .garant
+    .text
+      margin-left 30px
+
+    img
+      display block
+      margin 50px auto 0

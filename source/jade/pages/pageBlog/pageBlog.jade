@@ -1,0 +1,113 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        section.blog.header--padding
+            .width-wrap
+                h2 Блог компании
+
+                div
+                    aside
+                        .aside__el.tags
+                            span
+                                strong Тэги:
+
+                            a(href="") Здоровье - 5
+                            a(href="") Дети - 10
+                            a(href="") Хозяйке на заметку - 3
+                            a(href="") Игрушки -12
+                            a(href="") Безопасность - 4
+                            a(href="") Детский сад - 6
+
+                        .aside__el
+                            span
+                                strong Самые обсуждаемые:
+
+                            a(href="") Как избежать простуды у ребенка
+                            a(href="") Пластиковые игрушки во вред?
+                            a(href="") Торт за 5 минут
+                            a(href="") Лучшие предложения Осени 2017
+                            a(href="") Что купить в детский сад
+                            a(href="") Когда холода не проходят
+
+                        .aside__el
+                            span
+                                strong Самые полюбившиеся:
+
+                            a(href="") Как избежать простуды у ребенка
+                            a(href="") Пластиковые игрушки во вред?
+                            a(href="") Торт за 5 минут
+                            a(href="") Лучшие предложения Осени 2017
+                            a(href="") Что купить в детский сад
+                            a(href="") Когда холода не проходят
+
+                    ul.blog--list
+                        li
+                            a(href="").img
+                                img(src="../../../img/img--blog.png" alt /)
+
+                            .content
+                                time 12.03.2017
+
+                                a(href="").title Как уберечь ребенка от простуды в садике
+
+                                p Многим родителям знакома ситуация когда ребенок ходит 2-3 дня в&nbsp;садик и&nbsp;потом 10-14 дней родители пытаются вылечить его от&nbsp;простуды или какого-то другого вирусного заболевания. И&nbsp;это может продолжаться очень долго, тем самым заставляя родителей нервничать, &laquo;кормить&raquo; ребенка нескончаемым потоком лекарств, и&nbsp;доставлять массу неудобств на&nbsp;работе. Вообщем в&nbsp;таких ситуациях как правило забот может быть хоть отбавляй, походы по&nbsp;поликлиникам, аптекам, отпрашивания с&nbsp;работы или просьбы родственников посидеть с&nbsp;любимым (хоть и&nbsp;не&nbsp;совсем здоровым) внучком, племянником, крестником.
+
+
+                                .data
+                                    div
+                                        img(src="../../../img/icon--eye.png" alt /)
+                                        span 12544
+                                    div
+                                        img(src="../../../img/icon--comment.png" alt /)
+                                        span 1003
+                                    div
+                                        img(src="../../../img/icon--like.png" alt /)
+                                        span 600
+                        li
+                            a(href="").img
+                                img(src="../../../img/img--blog.png" alt /)
+
+                            .content
+                                time 12.03.2017
+
+                                a(href="").title Как уберечь ребенка от простуды в садике
+
+                                p Многим родителям знакома ситуация когда ребенок ходит 2-3 дня в&nbsp;садик и&nbsp;потом 10-14 дней родители пытаются вылечить его от&nbsp;простуды или какого-то другого вирусного заболевания. И&nbsp;это может продолжаться очень долго, тем самым заставляя родителей нервничать, &laquo;кормить&raquo; ребенка нескончаемым потоком лекарств, и&nbsp;доставлять массу неудобств на&nbsp;работе. Вообщем в&nbsp;таких ситуациях как правило забот может быть хоть отбавляй, походы по&nbsp;поликлиникам, аптекам, отпрашивания с&nbsp;работы или просьбы родственников посидеть с&nbsp;любимым (хоть и&nbsp;не&nbsp;совсем здоровым) внучком, племянником, крестником.
+
+
+                                .data
+                                    div
+                                        img(src="../../../img/icon--eye.png" alt /)
+                                        span 12544
+                                    div
+                                        img(src="../../../img/icon--comment.png" alt /)
+                                        span 1003
+                                    div
+                                        img(src="../../../img/icon--like.png" alt /)
+                                        span 600
+
+
+                .pagination
+                    a(href="").pagination-start В начало
+                    a(href="").pagination-prev
+
+                    .number-wrap
+                        a(href="").pagination-number 1
+                        span.pagination-number.current 2
+                        a(href="").pagination-number 3
+                        a(href="").pagination-number ...
+                        a(href="").pagination-number 27
+
+                    a(href="").pagination-next
+                    a(href="").pagination-end В конец
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/blog.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

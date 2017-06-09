@@ -1,0 +1,181 @@
+.about
+  h2
+    margin-bottom 15px
+
+  .flex-between
+    align-items center
+    margin-bottom 58px
+    padding-left 20px
+
+    @media nb
+      padding-left 0
+
+    @media tb
+      display block !important
+
+    img
+      @media nb
+        width 40%
+        margin-right 30px
+
+      @media tb
+        display block
+        max-width 200px
+        margin 0 auto 30px
+
+    .text
+      width 600px
+      padding-right 55px
+
+      @media tb
+        width auto
+        padding-right 0
+
+      p
+        display block
+        margin-bottom 10px
+
+  h3
+    padding-left 20px
+    margin-bottom 49px
+
+  .about-slider
+    margin 0 0 74px
+    position relative
+
+    @media nb
+      width 970px
+
+    @media tb
+      width auto
+      display block
+
+    .owl-nav
+      div
+        width 46px
+        height 46px
+        transform  scale(0.7)
+        top 50%
+        transition all 0.2s ease-in-out
+        position absolute
+
+        &:hover
+          transform  scale(1)
+
+      .owl-prev
+        left -95px
+        background url('../img/spritesheet.png') -685px -123px;
+
+        @media nb
+          left -40px
+
+        @media tb
+          left -15px
+
+      .owl-next
+        right -95px
+        background url('../img/spritesheet.png') -575px -597px;
+
+        @media nb
+          right -40px
+
+        @media tb
+          right -15px
+
+    &__el
+      width 190px
+      display block
+      margin 0 auto
+
+      a
+        display block
+
+        img
+          width 100%
+
+  .map
+    position relative
+
+    #about-map
+      height 500px
+
+      @media tb
+        height 300px
+
+    .map--contacts
+      position absolute
+      width 478px
+      height 353px
+      box-sizing border-box
+      padding 85px 40px 0 80px
+      background url("../img/bg--about-contacts.png") no-repeat 0 0
+      top 75px
+      margin-left 120px
+      left 50%
+      display inline-block
+      vertical-align top
+      z-index 10
+      background-size 100% 100%
+
+      @media nb
+        padding 45px 20px 0 40px
+        width 400px
+        height 270px
+        margin-left 100px
+
+      @media tb
+        position relative
+        background none
+        padding 20px
+        top auto
+        right auto
+        left auto
+        margin 0 auto
+        display block
+        height auto
+        width 300px
+        padding 20px 0
+
+      .icon-close
+        position absolute
+        width 38px
+        height 39px
+        background url(../img/icon--close.png) no-repeat 0 0
+        z-index 15px
+        top 6px
+        right 24px
+        cursor pointer
+
+        @media tb
+          display none
+
+      p
+        display block
+        color $cGray
+        font-size 13px
+        font-weight lighter
+        margin-bottom 42px
+
+      div
+        display block
+        margin-bottom 5px
+
+        a
+          display inline-block
+          vertical-align top
+          font-size 24px
+          font-family $fUbuntu_m
+          color $cGray
+          width 215px
+
+          @media mb
+            width auto
+            font-size 20px
+            margin-right 10px
+
+        span
+          line-height 29px
+
+          @media mb
+            line-heigh 24px
+

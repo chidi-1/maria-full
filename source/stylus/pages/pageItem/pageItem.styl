@@ -1,0 +1,564 @@
+.slider-discount.item-slider-discount
+  margin-top 38px
+  margin-bottom 36px
+
+.item
+  padding-bottom 67px
+
+  .breadcrumbs
+    margin-left 30px
+    margin-bottom 56px
+
+  .flex-between
+    @media mb
+      display block !important
+
+    .one-half
+      @media mb
+        display block
+        width 100%
+
+  .one-half:first-child
+    margin-left 30px
+
+    @media nb
+      margin-left 0
+
+    @media tb
+      width 30%
+
+    @media mb
+      display block
+      width 100%
+
+  .one-half:last-child
+    width 600px
+
+    @media nb
+      width 440px
+
+    @media tb
+      width 60%
+
+    @media mb
+      display block
+      width 100%
+
+  &--img
+    margin-bottom 85px
+
+    @media mb
+      margin-bottom 30px
+
+    .tabs
+      padding-top 26px
+
+      &__content
+        margin-bottom 40px
+
+        img
+          max-width 100%
+          margin 0 auto
+          display block
+
+      &__caption
+        text-align center
+
+        @media tb
+          text-align left
+          margin-left 0
+
+        @media mb
+          text-align center
+
+        li
+          display inline-flex
+          align-items center
+          justify-content center
+          width 90px
+          min-width 90px
+          height 90px
+          box-sizing border-box
+          padding 2px
+          border 3px solid transparent
+          border-radius 13px 6px 12px 8px
+          text-align center
+          margin-left 11px
+          background transparent
+
+          @media nb
+            width 70px
+            height 70px
+            min-width 70px
+
+          @media tb
+            width 50px
+            height 50px
+            min-width 50px
+            margin-left 0
+            margin-right 10px
+
+          &.active
+            border 3px solid #c9cbce
+
+          img
+            display block
+            max-height 100%
+            max-width 100%
+
+  &--params
+    margin-bottom 85px
+
+    .flex-between
+      @media mb
+        display flex !important
+      @media xs
+        display block !important
+        display block !important
+
+    &-fabricator
+      display inline-block
+      vertical-align top
+      color $cBlue_d
+      margin-right 20px
+      font-size 13px
+
+      &:hover
+        text-decoration underline
+
+    &-code
+      display inline-block
+      vertical-align top
+      font-size 13px
+
+    &-name
+      display block
+      font-family $fTtlimesslab
+      font-size 36px
+      line-height 30px
+      margin-top 20px
+      margin-bottom 42px
+
+    &-price
+      display inline-block
+      vertical-align top
+      padding-top 27px
+
+      @media xs
+        display block
+        margin-bottom 20px
+
+      &-current
+        display block
+        font-size 36px
+        font-weight bold
+        margin-bottom 12px
+
+        small
+          font-size 24px
+
+      &-old
+        display block
+        font-size 13px
+
+        i
+          text-decoration line-through
+
+    &-color
+      display inline-block
+      vertical-align top
+      width 160px
+      margin-right 80px
+      margin-bottom 35px
+
+      @media nb
+        margin-right 0
+
+      @media xs
+        display block
+        width auto
+
+      label
+        display inline-block
+        vertical-align top
+        width 52px
+        height 52px
+        position relative
+        cursor pointer
+
+        input
+          display none
+
+        div
+          display block
+          width 52px
+          height 52px
+          position relative
+
+          &:before
+            position absolute
+            content ""
+            left 0
+            top 0
+            right 0
+            bottom 0
+            
+        &:nth-child(3n + 1)
+          div:before
+            background url("../img/decor--color-left-s.png")
+        &:nth-child(3n + 1)
+          input:checked + div:before
+            background url("../img/decor--color-left-l.png")
+
+        &:nth-child(3n + 2)
+          div:before
+            background url("../img/decor--color-center-s.png")
+        &:nth-child(3n + 2)
+          input:checked + div:before
+            background url("../img/decor--color-center-l.png")
+
+        &:nth-child(3n + 3)
+          div:before
+            background url("../img/decor--color-right-s.png")
+        &:nth-child(3n + 3)
+          input:checked + div:before
+            background url("../img/decor--color-right-l.png")
+        &.radio-color-white
+          div:before
+            background url("../img/decor--color-white-s.png")
+        &.radio-color-white
+          input:checked + div:before
+            background url("../img/decor--color-white-l.png")
+
+    &-data
+      display block
+      background url("../img/bg--item-data.png") no-repeat 0 0
+      background-size 100% 100%
+      padding 56px 35px 22px
+      margin-bottom 46px
+
+      @media mb
+        margin-bottom 25px
+
+      @media xs
+        margin 0 -15px 25px
+        background #eaeff4
+        padding 20px 15px 0
+
+      div
+        display inline-block
+        vertical-align top
+        margin-bottom 35px
+
+        @media nb
+          width 49%
+
+        &:nth-child(3n+1),
+        &:nth-child(3n+2)
+          width 150px
+
+          @media nb
+            width 49%
+
+        &:nth-child(3n+3)
+          width 210px
+
+          @media nb
+            width 49%
+
+        &.share
+          margin-bottom 0
+
+          *
+            margin-bottom 0
+
+        span
+          display block
+          color $cBrown
+
+          strong
+            font-weight bold
+
+        &.share
+          width 100%
+
+          .ya-share2__container
+            width 100%
+
+    &-btns
+      display block
+
+      @media mb
+        text-align center
+
+      &-value
+        display inline-block
+        vertical-align top
+        margin-left 60px
+        padding-top 10px
+        margin-right 33px
+
+        @media nb
+          margin-right 5px
+          margin-left 0
+
+        @media mb
+          display block
+          margin 0 auto 30px
+
+        a
+          display inline-block
+          vertical-align top
+          width 53px
+          height 54px
+          text-align center
+          line-height 52px
+          font-weight bold
+          color $cGray
+          font-size 24px
+          
+          &.btn-minus
+            padding-left 3px
+            background url("../img/bg--number-l.png") no-repeat 0 0
+
+            &:hover
+              color $cGray
+              background url("../img/bg--number-gray-l.png") no-repeat 0 0
+
+          &.btn-plus
+            background url("../img/bg--number-right-l.png") no-repeat 0 0
+
+            &:hover
+              color $cGray
+              background url("../img/bg--number-gray-right-l.png") no-repeat 0 0
+
+        input
+          display inline-block
+          vertical-align top
+          width 60px
+          height 54px
+          text-align center
+          border none
+          outline none
+          font-size 24px
+          font-weight bold
+
+          @media nb
+            width 40px
+
+      .btn
+        display inline-block
+        vertical-align top
+
+      .btn-white
+        display inline-block
+        vertical-align top
+        background url("../img/bg--btn-white.png")
+        width 140px
+        height 67px
+        padding-left 35px
+        position relative
+        margin-right 15px
+        line-height 65px
+
+        &:before
+          position absolute
+          content ""
+          width 21px
+          height 21px
+          background url("../img/decor--arrow.png") no-repeat 0 0
+          top 50%
+          margin-top -10px
+          left 10px
+          z-index 10
+
+        &:hover
+          color $cGray
+          
+      .btn-blue
+        width 127px
+        height 65px
+        line-height 65px
+        background url("../img/bg--btn-s.png") no-repeat 0 0
+
+
+  &--about
+    .tabs__caption
+      margin-bottom 52px
+
+      @media tb
+        margin-left 0
+
+      @media mb
+        display none
+
+      li
+        min-width 180px
+        background-size 100% 100%
+
+        @media tb
+          min-width 120px
+
+    .tabs__content
+      margin-left 30px
+
+      @media tb
+        margin-left 0
+
+      .one-half
+        @media tb
+          width 48%
+
+        @media mb
+          width auto
+          display block
+          margin-bottom 20px
+
+      p
+        margin-bottom 20px
+        line-height 17px
+
+      .flex-between
+        padding-top 26px
+
+        .one-half:first-child
+          margin-left 0
+
+        .one-half:last-child
+          width 600px
+
+          @media tb
+            width 48%
+
+          @media mb
+            width auto
+            display block
+            margin-bottom 20px
+
+      h3
+        margin-bottom 14px
+
+      span
+        display block
+        line-height 17px
+
+      .text-list
+        li
+          display block
+          padding-left 12px
+          position relative
+          font-weight bold
+          color $cGray
+          margin-bottom 17px
+
+          &:before
+            position absolute
+            content "-"
+            left 0
+
+          &:last-child
+            margin-bottom 0
+
+  .mobile-select
+    display none
+
+    @media mb
+      display block
+      margin 0 -15px 30px
+      background #eaeff4
+      padding 20px 15px
+
+    .jq-selectbox
+      width 100%
+
+    .jq-selectbox__select
+      box-shadow none !important
+      background $cWhite !important
+      border 1px solid $cGray_l !important
+      border-radius 30px
+      width 100%
+      height 38px
+      padding 0 35px 0 37px
+      position relative
+
+      .jq-selectbox__select-text
+        color $cBrown
+        font-family $fUbuntu_m
+        position relative
+        z-index 10
+        padding-top 2px
+
+      .jq-selectbox__trigger
+        border none
+        z-index 10
+
+        .jq-selectbox__trigger-arrow
+          border none
+          width 19px
+          height 19px
+          background url("../img/spritesheet.png") no-repeat -21px -21px
+          top 50%
+          margin-top -9px
+          right 10px
+          transition all 0.2s ease-in-out
+          filter grayscale(100%)
+
+          &:hover
+            filter grayscale(0)
+
+    .jq-selectbox__dropdown
+      padding-top 10px
+      border 1px solid $cGray_l
+      border-top none
+      border-radius 0 0 10px 10px
+      box-shadow none
+      background $cWhite
+      top 27px !important
+      z-index 11
+      padding-bottom 10px
+      bottom auto !important
+
+      &:before,
+      &:after
+        position absolute
+        content ""
+        width 5px
+        height 10px
+        background $cWhite
+        top -10px
+
+      &:before
+        left -1px
+        border-left 1px solid $cGray_l
+
+      &:after
+        right -1px
+        border-right 1px solid $cGray_l
+
+      ul
+        display block
+        margin-bottom 0
+
+        li
+          display block
+          background transparent !important
+          color $cBrown !important
+          padding-left 37px
+
+          &:before
+            display none
+
+          &:hover
+            text-decoration underline
+
+          &.disabled
+            display none
+
+
+.related
+  padding-bottom 48px
+
+
+
+
+

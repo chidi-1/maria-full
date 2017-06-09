@@ -1,0 +1,508 @@
+.index--slider
+  position relative
+  overflow hidden
+  width 100%
+
+  .owl-stage
+    display flex
+    align-items stretch
+
+  .owl-item
+    width 100%
+
+  .owl-nav
+    div
+      position absolute
+      top 43%
+      width 60px
+      height 60px
+      background url(../img/spritesheet.png) no-repeat 0 0
+      opacity 0.8
+      transition all 0.2s ease-in-out
+      z-index 10
+
+      &:hover
+        opacity 1
+
+      &.owl-prev
+        background-position -688px -21px
+        left 5%
+
+      &.owl-next
+        background-position -237px -597px
+        right 5%
+
+  .owl-dots
+    position absolute
+    left 50%
+    bottom 20px
+    z-index 10
+    transition none
+    margin-left 0
+    width 25%
+    text-align center
+
+    @media nb
+      width 30%
+
+    .owl-dot
+      display inline-block
+      vertical-align top
+      width 12px
+      height 12px
+      border-radius 12px
+      border 3px solid $cWhite
+      opacity 0.5
+      margin 0 14px
+
+      &.active
+        background $cWhite
+
+  &__el
+    min-height 840px
+    background-size cover !important
+    padding-top 300px
+    padding-bottom 85px
+    height 100%
+    display block
+    width 100%
+
+    @media nb
+      min-height 500px
+      padding-top 190px
+      padding-bottom 50px
+
+    @media nb
+      min-height 400px
+      padding-top 140px
+      padding-bottom 20px
+
+    &.animate-el
+      -webkit-animation-duration .3s !important
+      animation-duration .3s !important
+
+    img
+      width  auto !important
+
+    .discount
+      display inline-block
+      vertical-align top
+      width 512px
+      height 406px
+
+      @media nb
+        zoom 0.8
+
+      @media tb
+        zoom 0.6
+
+      &.discount-blue
+        background url("../img/discount-pic1.png") no-repeat 0 0
+      &.discount-orange
+        background url("../img/discount-pic2.png") no-repeat 0 0
+      &.discount-red
+        background url("../img/discount-pic3.png") no-repeat 0 0
+
+      &--text
+        text-align center
+        width 220px
+        display inline-block
+        vertical-align top
+
+        span
+          display block
+          font-family $fNeucha
+          font-size 34px
+          color $cWhite
+
+          &.discount--text-val
+            font-size 110px
+            line-height 92px
+            text-shadow 2px 3px 2px rgba(0, 0, 0, 0.8)
+
+    .banner-content
+      display inline-block
+      vertical-align top
+      width 25%
+      position relative
+      margin-top 4px
+
+      @media nb
+        width 30%
+        margin-top -15px
+
+      .banner-content--price
+        position absolute
+        top 0
+        left 340px
+        width 148px
+        height 153px
+        background url(../img/spritesheet.png) no-repeat -790px -21px
+        text-align center
+        padding-top 50px
+
+        span
+          font-family $fTtlimesslab
+          font-size 33px
+          line-height 26px
+          color #2d2926
+
+          strong
+            font-size 50px
+            font-weight bold
+            padding-left 4px
+
+      &--logo
+        display block
+        margin 0 auto 33px
+        max-width 100%
+
+        @media nb
+          margin 0 auto 20px
+
+        &.banner-content--logo-left
+          position absolute
+          top 0
+          right 340px
+
+          @media nb
+            position relative
+            right auto
+
+      &--text
+        margin-bottom 37px
+
+        @media nb
+          margin-bottom 20px
+
+        span.title
+          display block
+          margin-bottom 30px
+          font-family $fTtlimesslab
+          font-size 36px
+          line-height 36px
+          text-align left
+          font-weight bold
+
+        p
+          color $cWhite
+          font-size 13px
+          line-height 17px
+          font-weight lighter
+          margin-bottom 10px
+
+          strong
+            font-family $fUbuntu_m
+
+        &.text-brown
+          span, p
+            color $cBrown
+
+    &.index--slider__el-right
+      .discount
+        margin-top 58px
+        margin-left -111px
+        text-align right
+
+        @media nb
+          margin-left -35px
+
+        &--text
+          margin-right 32px
+          margin-top 160px
+
+      .banner-content
+        margin-right 114px
+
+        @media nb
+          margin-right 75px
+          margin-top 40px
+
+    &.index--slider__el-left
+      .discount
+        margin-right -108px
+        margin-top 58px
+        text-align left
+
+        &--text
+          margin-top 158px
+          margin-left 29px
+
+      .banner-content
+        margin-left 163px
+
+        @media tb
+          width 43%
+          margin-left 100px
+
+.index--catrgory-sell
+  padding-bottom 26px
+
+.index--sell
+  padding-top 43px
+  padding-bottom 55px
+
+  @media nb
+    padding-bottom 15px
+
+.actions-block
+  padding-bottom 17px
+
+  h2
+    margin-bottom 54px
+
+  .actions-list
+    @media tb
+      display block !important
+      text-align center
+
+    .action__item
+      display inline-block
+      vertical-align top
+
+      @media tb
+        margin 0 20px
+
+      @media mb
+        margin 0 5px
+
+      @media xs
+        display block
+        margin-bottom 20px
+
+      &:first-child
+        @media tb
+          display block
+
+  .action__link 
+    display inline-block
+    position relative
+    overflow hidden
+
+    &.action__link1
+      border-radius 10px
+
+      @media nb
+        width 410px
+
+      @media tb
+        display block
+        margin 0 auto 20px
+
+      @media xs
+        width 100%
+
+    &.action__link3
+      margin-top -11px
+
+      @media nb
+        width 260px
+        margin-top -65px
+
+      @media tb
+        width 210px
+        margin-top -10px
+      
+      p 
+        font-family $fTtlimesslab
+        font-size 36px 
+        margin-bottom 0 
+        color #b6906d 
+        position absolute 
+        bottom 100px 
+        left 80px 
+        text-align right 
+        line-height 1
+
+        @media nb
+          left 60px
+          font-size 30px
+          bottom 60px
+
+        span
+          font inherit
+          color inherit
+          display block
+          margin-right -10px
+
+    &.action__link2
+      border-radius 73px
+
+      @media nb
+        width 202px
+        border-radius 45px
+
+      .sprite
+        position absolute
+        right 0
+        bottom 0
+
+        @media nb
+          transform scale(0.7)
+          right -50px
+          bottom -20px
+        
+      p 
+        font-family $fTtlimesslab
+        font-size 36px 
+        margin-bottom 0 
+        color $cWhite
+        position absolute 
+        bottom 30px 
+        right 40px 
+        z-index 3
+
+        @media nb
+          font-size 24px
+          right 25px
+          bottom 20px
+
+    img
+      max-width 100%
+      max-height 100%
+      
+    .action__text 
+      width 100% 
+      position absolute 
+      right 50px 
+      top 53px 
+      color #fff
+      max-width 260px
+
+      @media nb
+        top 30px
+        right 10px
+        max-width 285px
+
+      @media xs
+        max-width none
+        left 10px
+        top 10px
+        width auto
+
+      .title
+        font-family $fTtlimesslab
+        font-size 36px
+        margin-bottom 25px
+
+        @media nb
+          font-size 30px
+          margin-bottom 15px
+
+        @media xs
+          font-size 20px
+          margin-bottom 5px
+
+      p
+        font-size 14px
+        color $cWhite
+
+        @media nb
+          font-size 12px
+
+    .sprite 
+      background-image url(../img/spritesheet.png)
+      background-repeat no-repeat 
+      display block 
+      
+    .sprite-shape1 
+      width 255px 
+      height 114px 
+      background-position -688px -290px 
+  
+.index--blog
+  background #eaf3f9
+  padding 35px 0 50px 0
+
+  h2
+    margin-bottom 2px
+
+  .blog--list
+    margin-left 30px
+    width auto
+
+    @media tb
+      display block !important
+
+    @media mb
+      padding-left 0
+      margin-left 0
+
+    li
+      width 530px
+      margin-bottom 0
+
+      @media nb
+        width 450px
+
+      @media tb
+        display block
+        width auto
+        margin-bottom 40px
+
+      @media mb
+        padding-left 0
+
+      .content
+        width auto
+
+      img
+        display block
+        margin 0 auto -8px
+
+.index--trend
+  background #eaf3f9
+  padding 30px 0 41px 0
+
+  h2
+    margin-bottom 21px
+
+  .trends-slider
+    width 1000px
+    display block
+    margin 0 auto
+    position relative
+
+    @media nb
+      width auto
+
+    .trends-slider__el
+      width 140px
+      padding 10px 0 50px
+      margin 0 auto
+
+      a
+        display block
+
+        &:hover
+          box-shadow 0 0 20px rgba(0, 0, 0, 0.2)
+
+    .owl-nav
+      div
+        position absolute
+        bottom -20px
+        left 50%
+        width 47px
+        height 46px
+        background url(../img/spritesheet.png) no-repeat 0 0
+        opacity 0.8
+        transition all 0.2s ease-in-out
+        z-index 10
+        transform scale(0.7)
+        display none
+
+        @media tb
+          display inline-block
+          vertical-align top
+
+        &:hover
+          opacity 1
+          transform scale(1)
+
+        &.owl-prev
+          background-position -685px -123px
+          margin-left -57px
+
+        &.owl-next
+          background-position -575px -597px
+          margin-left 10px

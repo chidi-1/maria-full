@@ -1,0 +1,117 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        section.lk.header--padding
+            .width-wrap
+                h2 Личный кабинет
+
+                form(action="" method="post").main-form.js--form-submit-default
+                    .flex-between
+                        .one-half
+                            h3 Основная информация
+
+                            .lk--name
+                                select(name="name").js--select-styled
+                                    option(value="Константинопольский Константин Константинович" selected) Константинопольский Константин Константинович
+                                    option(value="name1") name1
+                                    option(value="name2") name2
+                                    option(value="name3") name3
+
+                            .lk--data
+                                .flex-between
+                                    input(type="text" name="born" placeholder="31.12.1900").inp.required.inp-s
+
+                                    select(name="sex").js--select-styled
+                                        option(value="Укажите пол" selected disabled) Укажите пол
+                                        option(value="male") мужской
+                                        option(value="female") женский
+
+                                    input(type="text" name="phone" placeholder="+7 123 456-78-90").inp.inp-s.inp-phone
+
+                            input(type="text" name="born" placeholder="Konstantinopolsky.Konstantin@konstantinopolskiy.com").inp.required.inp-l.inp-mail
+
+                            .lk--discount
+                                .flex-between
+                                    input(type="text" name="discount" placeholder="Укажите номер дисконтной карты").inp.required.inp-m
+
+                                    .lk--discount-added
+                                        div.lk--discount-added--el
+                                            a(href="" data-method="post" data-url="../../../js/ajax/send-ok.php" data-id="id карты").decor-left-remove.js--lk-remove-discount
+                                                span Открепить карту
+
+                                            img(src="../../../img/img--discount.png" alt /).lk--discount-img
+
+                            h3.title-security Безопасность
+
+                            .lk--password
+                                .flex-between
+                                    input(type="password" name="old" placeholder="Введите старый пароль").inp.required.js--old-password.inp-m
+                                    input(type="password" name="new" placeholder="Новый пароль").inp.required.js--new-password.inp-m
+
+                                .flex-between
+                                    img(src="../../../img/img--lock.png" alt /).lk--password-img
+                                    input(type="password" name="new2" placeholder="Новый пароль еще раз").inp.required.js--new-password2.inp-m
+
+                        .one-half
+                            h3 Адреса доставки
+
+                            .lk--adress
+                                img(src="../../../img/img--lk.png").lk--adress-img
+
+                                .lk--adress--el
+                                    span.title Адрес №1
+
+                                    select(name="region").js--select-styled
+                                        option(value="" selected disabled) Выберите регион доставки
+                                        option(value="Регион1") Регион 1
+                                        option(value="Регион2") Регион 2
+                                        option(value="Регион3") Регион 3
+
+                                    .flex-between
+                                        input(type="text" name="town" placeholder="Город").inp.inp-m.required
+                                        input(type="text" name="street" placeholder="Улица").inp.inp-m.required
+
+                                    .flex-between
+                                        input(type="text" name="home" placeholder="Дом").inp.required.inp-s
+                                        input(type="text" name="housing" placeholder="Корпус/строение").inp.inp-s
+                                        input(type="text" name="flat" placeholder="Квартира").inp.inp-s
+
+                            a(data-url="../../../js/ajax/load-lk--adress--el.html").decor-left.add-adress.js--add-adress
+                                span Добавить еще один адрес доставки
+
+                            h3 Настройка уведомлений
+
+                            label.checkbox
+                                input(type="checkbox" checked name="subscribe1" value="1").hidden-block
+                                .psevdocheckbox
+                                span Получать уведомления о&nbsp;новостных сообщениях
+
+                            label.checkbox
+                                input(type="checkbox" checked name="subscribe2" value="1").hidden-block
+                                .psevdocheckbox
+                                span Получать уведомления об&nbsp;акциях и&nbsp;скидках
+
+                            label.checkbox
+                                input(type="checkbox" checked name="subscribe3" value="1").hidden-block
+                                .psevdocheckbox
+                                span Получать сообщения от&nbsp;администрации сайта
+
+                            label.checkbox
+                                input(type="checkbox" checked name="subscribe4" value="1").hidden-block
+                                .psevdocheckbox
+                                span Получать уведомления об&nbsp;изменениях статуса заказа и&nbsp;оплаты
+
+                            label.checkbox
+                                input(type="checkbox" checked name="subscribe5" value="1").hidden-block
+                                .psevdocheckbox
+                                span Получать сообщения о&nbsp;новых поступлениях и&nbsp;других событиях
+
+                            a(href="").decor-left.my-order
+                                span Мои заказы
+
+                    .lk--btn
+                        input(type="submit" value="Сохранить изменения").btn.btn-blue.btn-l.js--form-submit

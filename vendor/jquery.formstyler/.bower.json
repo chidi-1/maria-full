@@ -1,0 +1,13 @@
+{
+  "name": "jquery.formstyler",
+  "_cacheHeaders": {
+    "Last-Modified": "Sat, 12 Sep 2015 12:53:15 GMT",
+    "Content-Length": "39017",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "http://dimox.github.io/jQueryFormStyler/jquery.formstyler.js",
+  "_target": "*",
+  "_originalSource": "http://dimox.github.io/jQueryFormStyler/jquery.formstyler.js",
+  "_direct": true
+}

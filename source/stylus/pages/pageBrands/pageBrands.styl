@@ -1,0 +1,148 @@
+.brands
+  h2
+    margin-bottom 31px
+
+  .letters
+    display block
+    text-align center
+    margin-bottom 20px
+
+    li
+      display inline-block
+      vertical-align top
+      margin 0 6px
+
+      &.active
+        position relative
+
+        &:after
+          position absolute
+          content ""
+          width 38px
+          height 6px
+          background url("../img/decor--pagination.png") no-repeat 0 0
+          bottom -13px
+          left 50%
+          margin-left -19px
+
+          @media mb
+            zoom 0.5
+
+      span,
+      a
+        display block
+        font-size 24px
+        font-family $fUbuntu_m
+
+      span
+        color $cBlue_d
+
+  .brends-list
+    padding-top 100px
+    padding-left 60px
+    padding-bottom 150px
+    position relative
+
+    @media tb
+      padding-bottom 30px
+      padding-left 0
+
+    li
+      display inline-block
+      vertical-align top
+      width 140px
+      height 100px
+      text-align center
+      cursor pointer
+      margin 0 20px 20px
+
+      img
+        display block
+        margin 0 auto
+        max-width 100%
+        max-height 100%
+
+      &.active
+        position relative
+
+        @media tb
+          position static
+
+        .content-wrap
+          margin-left 0
+          margin-right 0 !important
+
+      .content-wrap
+        position absolute
+        width 642px
+        padding 63px 120px
+        background url("../img/bg--brend-about.png") no-repeat 0 0
+        background-size 100% 100%
+        top -120px
+        text-align left
+        min-height 385px
+        margin-left -9999999px
+
+        @media nb
+          padding 47px 58px 47px 95px
+          width 560px
+          min-height 280px
+          top -80px
+
+        &:before
+          position absolute
+          content ""
+
+        .content
+          max-height 330px
+
+          @media nb
+            max-height 230px
+
+        .mCSB_scrollTools
+          background transparent
+
+        .mCSB_scrollTools .mCSB_draggerRail
+          background transparent !important
+
+        .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+          width 9px
+          background $cBlue_d
+          border-radius 10px
+
+      &:nth-child(6n + 1),
+      &:nth-child(6n + 2),
+      &:nth-child(6n + 3)
+        .content-wrap
+          left 115px
+
+      &:nth-child(6n + 4),
+      &:nth-child(6n + 5),
+      &:nth-child(6n + 6)
+        .content-wrap
+          right 115px
+          margin-right -999999px
+          background url("../img/bg--brend-about-left.png") no-repeat 0 0
+          background-size 100% 100%
+
+          @media nb
+            right auto
+            left 115px
+            margin-right 0
+            background url("../img/bg--brend-about.png") no-repeat 0 0
+            background-size 100% 100%
+
+      &:nth-child(5n + 4),
+      &:nth-child(5n + 5)
+        .content-wrap
+          right 115px
+          left auto
+          margin-right -999999px
+          background url("../img/bg--brend-about-left.png") no-repeat 0 0
+          background-size 100% 100%
+
+  .brends-content
+    display block
+    margin 0 -15px
+    padding 15px
+    background #eaeff4

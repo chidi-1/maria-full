@@ -1,0 +1,74 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        section.about.header--padding
+            .width-wrap
+                h2 О компании
+
+                .flex-between
+                    img(src="../../../img/img--about.png" alt /)
+
+                    .text
+                        p Торговая компания &laquo;Мария&raquo;&nbsp;&mdash; это детский супермаркет на&nbsp;Ленинском проспекте. &laquo;Любимый магазин пап и&nbsp;мам&raquo;&nbsp;&mdash; так назвали наши покупатели свой магазин, потому что здесь можно приобрести все необходимое для детей, а&nbsp;коллектив продавцов-консультантов и&nbsp;специалистов по&nbsp;закупкам всегда поможет с&nbsp;решением любого вопроса. Для постоянных покупателей действует накопительная дисконтная программа.
+                        p Компания &laquo;Мария&raquo; вот уже более 15&nbsp;лет успешно работает на&nbsp;рынке детских товаров и&nbsp;детского питания. Развивая это направление, мы&nbsp;хорошо понимаем, что забота о&nbsp;здоровье и&nbsp;развитии детей&nbsp;&mdash; задача не&nbsp;только родителей, но&nbsp;и&nbsp;наша. Поэтому высокое качество и&nbsp;безопасность продукции, поступающей на&nbsp;полки магазина, является основным критерием, которым руководствуются наши специалисты. Мы&nbsp;уверены, что вещи и&nbsp;предметы, которые окружают ребенка сегодня, влияют на&nbsp;его интересы и&nbsp;занятия в&nbsp;будущем. Поэтому мы&nbsp;уделяем особое внимание подбору товаров, способствующих правильному развитию детей, а&nbsp;большой опыт работы на&nbsp;рынке детских товаров помогает сделать нужный выбор в&nbsp;пользу самых лучших и&nbsp;экологически чистых товаров.
+
+                h3 Наши документы
+
+                .about-slider
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+                    .about-slider__el
+                        a(href="../../../img/img--sertificate.jpg" rel="sertifiate").fancy
+                            img(src="../../../img/img--sertificate.jpg" alt /)
+
+                h3 Как нас найти
+
+            div( ).map
+                div(id="about-map" data-img="../../../img/icon--map.png")
+                .map--contacts
+                    .icon-close.js--close-contacts
+
+                    p   ООО &laquo;Торговая Компания Мария&raquo;
+                        br
+                        ="Москва, Ленинский проспект, д. 78"
+
+                    div
+                        a(href="tel:84991315112") 8 (499) 131-51-12
+                        span Детское питание,
+                    div
+                        a(href="tel:84991319392") 8 (499) 131-93-92
+                        span Одежда и&nbsp;обувь,
+                    div
+                        a(href="tel:84991339076") 8 (499) 133-90-76
+                        span Игрушки
+
+    script(type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/about.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

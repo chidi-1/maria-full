@@ -1,0 +1,249 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        section.header--padding.catalog
+            .width-wrap
+                .filter-form-bg
+                    form(action="../../../js/ajax/setfilter.php" method="post").filter-form
+                        h2 Одежда
+
+                        .flex-between.filter-top
+                            select.js--select-styled
+                                option(selected disabled) Размер
+                                option(value="1") Размер1
+                                option(value="2") Размер2
+                                option(value="3") Размер3
+
+                            .filter-top--center
+                                .slider-wrap
+                                    span Цена от
+
+                                    span.value
+
+                                    div(data-min="2" data-max="40" data-current="10" data-range="5").slider
+
+                                .slider-wrap
+                                    span Цена от
+
+                                    span.value
+
+                                    div(data-min="2" data-max="40" data-current="20" data-range="5").slider
+
+                                .filter-top--center--checkbox
+                                    label
+                                        input(type="checkbox" checked= name="" value="")
+                                        .psevdocheckbox
+                                        span Для мальчиков
+                                    label
+                                        input(type="checkbox"  name="" value="")
+                                        .psevdocheckbox
+                                        span Для девочек
+                                    label
+                                        input(type="checkbox"  name="" value="")
+                                        .psevdocheckbox
+                                        span Со скидками
+                                    label
+                                        input(type="checkbox"  name="" value="")
+                                        .psevdocheckbox
+                                        span С акциями
+                                    label
+                                        input(type="checkbox"  name="" value="")
+                                        .psevdocheckbox
+                                        span Аутлет
+
+
+                            .filter-color
+                                span Цвет
+
+                                .grid
+                                    label.radio-color.grid-item
+                                        input(type="checkbox" checked name="" value="color1")
+                                        div(style="background: #ff1313")
+
+                                    label.radio-color.grid-item
+                                        input(type="checkbox" name="" value="color1")
+                                        div(style="background: #ffbf11")
+
+                                    label.radio-color.grid-item
+                                        input(type="checkbox" name="" value="color1")
+                                        div(style="background: #60a4ee")
+
+                                    label.radio-color.grid-item
+                                        input(type="checkbox" name="" value="color1")
+                                        div(style="background: #55ce3d")
+
+                                    label.radio-color.grid-item
+                                        input(type="checkbox" name="" value="color1")
+                                        div(style="background: #cd4eed")
+
+                                    label.radio-color.grid-item
+                                        input(type="checkbox" name="" value="color1")
+                                        div(style="background: #ffffff")
+
+                        .filter-bottom
+                            .filter-brends
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span ADEN&ANAIS
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span AGATHA
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span ANAIS
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span ADEN&
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span AGATHA
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span ADEN&ANAIS
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span AGATHA
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span ADEN&ANAIS
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span AGATHA
+                                label
+                                    input(type="checkbox" name="" value)
+                                    span  ADEN&ANAIS
+
+                            a(href="").decor-left-remove.js--filter-clear
+                                span Сбросить
+                                    br
+                                    ="фильтр"
+
+
+
+                .flex-between
+                    aside
+                        ul.aside-nav
+                            li
+                                span Белье и белье для новорожденных
+                            li
+                                a(href="") Пижамы и домашние костюмы
+                            li
+                                a(href="") Спортивные костюмы
+                            li
+                                a(href="") Толстовки, фуфайки, майки, футболки, свитера и водолазки
+
+
+                    .catalog--container
+                        h2 Белье и белье для  новорожденных
+
+                        .load-container
+                            p.notification К&nbsp;сожалению, товаров с&nbsp;такими пораметрами не&nbsp;найдено. Попробуте изменить условия поиска
+
+                        .load-container
+                            ul.catalog-item
+                                a(href="").slider-item__el
+                                    .slider-item__el-discount
+                                        span -30%
+
+                                    .slider-item__el-img
+                                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                                    span.slider-item__el-title Платье Aletta
+                                    span.slider-item__el-code Артикул
+
+                                    ul.stars
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li
+
+                                    span.slider-item__el-old-price 5 200 руб.
+                                    span.slider-item__el-new-price 6 630 руб.
+                                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                                a(href="").slider-item__el
+                                    .slider-item__el-img
+                                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                                    span.slider-item__el-title Платье Aletta
+                                    span.slider-item__el-code Артикул
+
+                                    ul.stars
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li
+
+                                    span.slider-item__el-old-price 5 200 руб.
+                                    span.slider-item__el-new-price 6 630 руб.
+                                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                                a(href="").slider-item__el
+                                    .slider-item__el-discount
+                                        span -30%
+
+                                    .slider-item__el-img
+                                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                                    span.slider-item__el-title Платье Aletta
+                                    span.slider-item__el-code Артикул
+
+                                    ul.stars
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li
+
+                                    span.slider-item__el-old-price 5 200 руб.
+                                    span.slider-item__el-new-price 6 630 руб.
+                                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                                a(href="").slider-item__el
+                                    .slider-item__el-img
+                                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                                    span.slider-item__el-title Платье Aletta
+                                    span.slider-item__el-code Артикул
+
+                                    ul.stars
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li
+
+                                    span.slider-item__el-old-price 5 200 руб.
+                                    span.slider-item__el-new-price 6 630 руб.
+                                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+                                a(href="").slider-item__el
+                                    .slider-item__el-img
+                                        img(src="../../../img/img-old/pic2.jpg" alt /)
+
+                                    span.slider-item__el-title Платье Aletta
+                                    span.slider-item__el-code Артикул
+
+                                    ul.stars
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li.active
+                                        li
+
+                                    span.slider-item__el-old-price 5 200 руб.
+                                    span.slider-item__el-new-price 6 630 руб.
+                                    span.slider-item__el-profit выгода 1 890 руб. или 30%
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/catalog.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

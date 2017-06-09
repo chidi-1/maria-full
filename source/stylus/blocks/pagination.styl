@@ -1,0 +1,170 @@
+
+.pagination
+  display block
+  text-align center
+
+  .number-wrap
+    display inline-block
+    vertical-align top
+
+  a,
+  span
+    display inline-block
+    vertical-align top
+    margin 0 15px
+
+    @media mb
+      margin 0 5px
+
+  a:hover
+    text-decoration underline
+
+  span
+    color $cBlue_d !important
+
+  .current
+    position relative
+
+    &:after
+      position absolute
+      content ""
+      width 38px
+      height 6px
+      background url("../img/decor--pagination.png") no-repeat 0 0
+      bottom -5px
+      left 50%
+      margin-left -19px
+
+      @media mb
+        zoom 0.5
+
+  .pagination-start,
+  .pagination-end
+    color #3f4954
+    font-size 13px
+    line-height 24px
+
+    @media mb
+      display none
+
+  .pagination-number
+    color #3f4954
+    font-size 24px
+    line-height 24px
+
+    @media mb
+      font-size 20px
+
+  .pagination-prev
+    margin-top -14px
+    width 53px
+    height 54px
+    background url("../img/sprite--arrow-pagination.png") no-repeat 0 0
+
+    @media mb
+      zoom 0.8
+      margin-top -12px
+
+    &:hover
+      background url("../img/sprite--arrow-pagination.png") no-repeat 0 -54px
+
+  .pagination-next
+    margin-top -14px
+    width 53px
+    height 54px
+    background url("../img/sprite--arrow-pagination.png") no-repeat -53px 0
+
+    @media mb
+      zoom 0.8
+      margin-top -12px
+
+    &:hover
+      background url("../img/sprite--arrow-pagination.png") no-repeat -53px -54px
+
+.breadcrumbs
+  display block
+  margin-bottom 90px
+
+  @media tb
+    margin-bottom 50px
+
+  li
+    display inline-block
+    vertical-align top
+    margin-right 15px
+    position relative
+
+    &:after
+      position absolute
+      content ">"
+      font-size 13px
+      color $cGray
+      top 0
+      right -11px
+
+    &:last-child
+      &:after
+        display none
+
+    a,
+    span
+      display block
+      font-size 13px
+      font-weight lighter
+
+      strong
+        font-weight bold
+
+    a
+      color $cGray
+
+      &:hover
+        text-decoration underline
+
+    span
+      color $cBlue_d
+
+.tabs
+
+  &__caption
+    margin-left -25px
+
+    li
+      display inline-block
+      vertical-align top
+      padding 0 25px
+      height 68px
+      line-height 60px
+      font-weight bold
+      color $cGray
+      cursor pointer
+      min-width 201px
+      text-align center
+
+      &:before
+        display none
+
+      &.active
+        background url("../img/bg--tab-active.png") no-repeat 50% 50%
+        cursor default
+
+  &__content
+    display none
+
+    &.active
+      display block
+
+
+.stars
+  display block
+
+  li
+    display inline-block
+    vertical-align top
+    margin-right 4px
+    width 16px
+    height 16px
+    background url("../img/spritesheet.png") no-repeat -756px -217px
+
+    &.active
+      background url("../img/spritesheet.png") no-repeat -815px -217px

@@ -1,0 +1,14 @@
+.dropdown-wrap
+  .dropdown
+    transition all 0.3s ease-in-out
+    opacity 0
+    background $cWhite
+    position absolute
+    transform scaleY(0)
+    transform-origin 100% 0;
+    z-index 10
+
+  &.open
+    .dropdown
+      opacity 1
+      transform scaleY(1)

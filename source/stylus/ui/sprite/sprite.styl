@@ -1,0 +1,103 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$bg_about_contacts_name = 'bg--about-contacts';
+$bg_about_contacts_x = 0px;
+$bg_about_contacts_y = 0px;
+$bg_about_contacts_offset_x = 0px;
+$bg_about_contacts_offset_y = 0px;
+$bg_about_contacts_width = 478px;
+$bg_about_contacts_height = 353px;
+$bg_about_contacts_total_width = 865px;
+$bg_about_contacts_total_height = 392px;
+$bg_about_contacts_image = '../img/sprite.png';
+$bg_about_contacts = 0px 0px 0px 0px 478px 353px 865px 392px '../img/sprite.png' 'bg--about-contacts';
+$bg_aside_name = 'bg--aside';
+$bg_aside_x = 478px;
+$bg_aside_y = 0px;
+$bg_aside_offset_x = -478px;
+$bg_aside_offset_y = 0px;
+$bg_aside_width = 387px;
+$bg_aside_height = 319px;
+$bg_aside_total_width = 865px;
+$bg_aside_total_height = 392px;
+$bg_aside_image = '../img/sprite.png';
+$bg_aside = 478px 0px -478px 0px 387px 319px 865px 392px '../img/sprite.png' 'bg--aside';
+$bg_decor_btn_name = 'bg--decor-btn';
+$bg_decor_btn_x = 0px;
+$bg_decor_btn_y = 353px;
+$bg_decor_btn_offset_x = 0px;
+$bg_decor_btn_offset_y = -353px;
+$bg_decor_btn_width = 38px;
+$bg_decor_btn_height = 39px;
+$bg_decor_btn_total_width = 865px;
+$bg_decor_btn_total_height = 392px;
+$bg_decor_btn_image = '../img/sprite.png';
+$bg_decor_btn = 0px 353px 0px -353px 38px 39px 865px 392px '../img/sprite.png' 'bg--decor-btn';
+$spritesheet_width = 865px;
+$spritesheet_height = 392px;
+$spritesheet_image = '../img/sprite.png';
+$spritesheet_sprites = $bg_about_contacts $bg_aside $bg_decor_btn;
+$spritesheet = 865px 392px '../img/sprite.png' $spritesheet_sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}

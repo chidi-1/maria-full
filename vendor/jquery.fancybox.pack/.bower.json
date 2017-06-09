@@ -1,0 +1,15 @@
+{
+  "name": "jquery.fancybox.pack",
+  "_cacheHeaders": {
+    "ETag": "\"c1824-5a9e-4e84a5a6a9140\"",
+    "Last-Modified": "Wed, 09 Oct 2013 08:05:49 GMT",
+    "Content-Length": "23198",
+    "Content-Type": "application/x-javascript"
+  },
+  "_release": "e-tag:c1824-5a9",
+  "main": "index.js",
+  "_source": "http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.5",
+  "_target": "*",
+  "_originalSource": "http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.5",
+  "_direct": true
+}

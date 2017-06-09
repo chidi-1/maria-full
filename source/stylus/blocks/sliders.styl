@@ -1,0 +1,350 @@
+.slider-discount
+  margin 0 45px
+  display block
+  width auto
+  position relative
+  padding-bottom 50px
+
+  @media nb
+    width auto
+    margin 0 10px
+
+  &__el
+    display inline-flex
+    align-items center
+    vertical-align top
+    justify-content flex-end
+    width 30.5vw
+    height 15vw
+    border-radius 7px
+    overflow hidden
+    position relative
+    margin 0 10px
+
+    @media tb
+      width 75%
+      height 225px
+      display flex
+      margin 0 auto
+
+    @media mb
+      width auto
+
+    @media xs
+      height 150px
+
+    img
+      display inline-block
+      vertical-align top
+      position absolute
+      left 0
+      top 0
+      bottom 0
+      width auto !important
+      height 100%
+      z-index 5
+
+    .content
+      display inline-block
+      vertical-align top
+      max-width 250px
+      margin-right 35px
+      position relative
+      z-index 10
+
+      @media nb
+        max-width 150px
+
+      @media tb
+        max-width 250px
+
+      @media xs
+        max-width 130px
+        margin-right 10px
+
+      span
+        display block
+
+        @media xs
+          font-size 12px
+
+        &.text-right
+          font-weight lighter
+
+        &.name
+          font-size 72px
+          line-height 50px
+          font-family  $fTtlimesslab
+          margin-bottom 20px
+
+          @media nb
+            font-size 48px
+            line-height 42px
+
+          @media tb
+            font-size 72px
+            line-height 50px
+            margin-bottom 20px
+
+          @media mb
+            font-size 48px
+            line-height 42px
+
+          @media xs
+            font-size 30px
+            line-height 36px
+            margin-bottom 10px
+
+      .decor-left
+        text-align right
+
+        span
+          display inline
+          padding-left 30px
+
+          &:before
+            top 18px
+
+    &.slider-discount__el-beige
+      background #faede3
+
+      span.name
+        color #26a9ac
+
+      .decor-left
+        span:before
+          background url("../img/decor--left-1.png") no-repeat 0 0
+
+    &.slider-discount__el-blue
+      background #f0f2f8
+
+      span.name
+        color #89c0a5
+
+      .decor-left
+        span:before
+          background url("../img/decor--left-2.png") no-repeat 0 0
+
+    &.slider-discount__el-brown
+      background #ebe0e3
+
+      span.name
+        color #778b6d
+
+        @media nb
+          text-align right
+
+      .decor-left
+        span:before
+          background url("../img/decor--left-3.png") no-repeat 0 0
+
+  .owl-dots
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    z-index 10
+    transition none
+    margin-left 0
+    text-align center
+
+    .owl-dot
+      display inline-block
+      vertical-align top
+      width 12px
+      height 12px
+      border-radius 12px
+      border 3px solid #a8b6c6
+      opacity 0.5
+      margin 0 14px
+
+      &.active
+        background #a8b6c6
+
+.catalog-item,
+.slider-item
+  height 515px
+  position relative
+
+  .slider-item__el
+    border 1px solid #c9cbce
+    border-radius 10px
+    overflow hidden
+    position relative
+    text-align center
+    color #3f4954
+    width 290px
+    height 455px
+    padding 55px 10px 10px 10px
+    transition all 0.2s ease-in-out
+    background $cWhite
+    display block
+    margin 0 auto
+
+    @media nb
+      width 235px
+
+    @media tb
+      height auto
+      width 220px
+
+    &:hover
+      height 515px
+
+      @media tb
+        height auto
+
+      .slider-item__el-links
+        opacity 1
+
+      .slider-item__el-discount
+        &:hover
+          &:before
+            opacity 0
+
+          &:after
+            opacity 1
+
+    img
+      width auto !important
+
+    &-discount
+      padding-top 15px 
+      padding-right 15px 
+      text-align right 
+      position absolute 
+      right 0 
+      top 0 
+      width 103px 
+      height 87px
+      z-index 10
+
+      &:before,
+      &:after
+        position absolute
+        content ""
+        width 103px
+        height 87px
+        background url(../img/img-old/spritesheet.png) no-repeat -391px -190px
+        opacity 1
+        left 0
+        top 0
+        transition all 0.2s ease-in-out
+
+      &:after
+        background url(../img/img-old/spritesheet.png) no-repeat -535px -190px
+        opacity 0
+
+      span
+        color $cWhite
+        z-index 10
+        position relative
+        font-size 30px
+        font-family $fNeucha
+
+    &-img
+      max-height 200px
+      margin-bottom 15px
+      width 100%
+      position relative
+
+      img
+        display block
+        margin 0 auto
+        max-width 100%
+        max-height 100%
+
+    span
+      display block
+
+    &-title,
+    &-code,
+    &-profit,
+    &-old-price
+      font-size 13px
+
+    &-old-price
+      margin-bottom 6px
+
+    &-code
+      margin-bottom 10px
+
+    &-profit
+      color $cBlue_d
+      margin-bottom 20px
+
+    .stars
+      margin-bottom 24px
+
+    &-new-price
+      font-size 24px
+      margin-bottom 9px
+
+
+    &-links
+      opacity 0
+      transition all 0.2s ease-in-out
+
+      @media tb
+        opacity 1
+
+      .btn
+        display inline-block
+        vertical-align top
+        width 53px
+        height 54px
+        background url("../img/spritesheet.png") no-repeat 0 0
+        opacity 0.8
+        margin 0 5px
+
+        &:hover
+          opacity 1
+
+        &.btn-show
+          background-position -158px -459px
+        &.btn-basket
+          background-position -253px -459px
+
+  .owl-nav
+    div
+      position absolute
+      top 43%
+      width 47px
+      height 46px
+      background url(../img/spritesheet.png) no-repeat 0 0
+      opacity 0.8
+      transition all 0.2s ease-in-out
+      z-index 10
+      transform scale(0.7)
+
+      @media tb
+        bottom 0px
+        top auto
+        left 50%
+
+      &:hover
+        opacity 1
+        transform scale(1)
+
+      &.owl-prev
+        background-position -685px -123px
+        left -95px
+
+        @media nb
+          left -45px
+
+        @media tb
+          left 50%
+          margin-left -57px
+
+      &.owl-next
+        background-position -575px -597px
+        right -95px
+
+        @media nb
+          right -45px
+
+        @media tb
+          left 50%
+          right auto
+          margin-left 10px
